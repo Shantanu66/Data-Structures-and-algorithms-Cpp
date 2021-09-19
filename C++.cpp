@@ -527,3 +527,74 @@ public:
     cout<<k<<endl;
     return 0;
 }*/
+///BUBBLE SORT AND SELECTION SORTING
+/*void selectionsort(int a[],int n)
+{
+    for(int i=0;i<=n-2;i++)
+    {
+        int smallest=i;
+        for(int j=i+1;j<=n-1;j++)
+        {
+            if(a[j]<a[smallest])
+            {
+                smallest=j;
+            }
+        }
+        swap(a[i],a[smallest]);
+    }
+
+}*/
+/*void Bubblesort(int a[],int n)
+{
+    int count=1;
+    while(count<=n-1)
+    {
+        bool optimisation=false;          //optimisation
+        for(int i=0;i<=n-2;i++)
+        {
+            if(a[i]>a[i+1])
+            {
+                swap(a[i],a[i+1]);
+                optimisation=true;
+            }
+        }
+        if(optimisation==false)break;
+        count++;
+
+
+    }
+}
+int main()
+{
+    int n;
+    cout<<"Enter No. of elements:"<<endl;
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    //selectionsort(a,n);
+    Bubblesort(a,n);
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    return 0;
+}*/
+/*int main()
+{
+    int n;
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    sort(a,a+n);
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    return 0;
+}*/
