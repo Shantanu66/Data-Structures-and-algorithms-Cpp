@@ -598,3 +598,68 @@ int main()
     }
     return 0;
 }*/
+///LINEAR AND BINARY SEARCH
+/*int LinearSearch(int a[],int n,int key)
+{
+    for(int i=0;i<n;i++)
+    {
+        if(a[i]==key)return i;
+    }
+    return -1;
+}*/
+/*int BinarySearch(int a[],int n,int key)
+{
+    int s=0,e=n-1;
+    while(s<=e)
+    {
+        int mid=s+(e-s)/2;
+        if(key==a[mid])return mid;
+        else if(a[mid]>key)e=mid-1;
+        else
+        {
+            s=mid+1;
+        }
+    }
+    return -1;
+}
+void BubbleSort(int a[],int n)
+{
+    int count=1;
+    while(count<=n-1)
+    {
+        bool check=false;
+        for(int i=0;i<=n-2;i++)
+        {
+            if(a[i]>a[i+1])
+            {
+                check=true;
+                swap(a[i],a[i+1]);
+            }
+        }
+        if(check==false)break;
+        count++;
+    }
+}
+int main()
+{
+    int n;
+    cout<<"Enter number of elements:"<<endl;
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    cout<<"Enter Key:"<<endl;
+    int key;
+    cin>>key;
+    BubbleSort(a,n);
+    int position=BinarySearch(a,n,key);
+    if(position==-1)cout<<"Key not found"<<endl;
+    else
+    {
+        cout<<"Key found at position:"<<" "<<position+1<<endl;
+    }
+
+    return 0;
+}*/
