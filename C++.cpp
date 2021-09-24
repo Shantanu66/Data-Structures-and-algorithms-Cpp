@@ -663,3 +663,45 @@ int main()
 
     return 0;
 }*/
+///RECURSION BASIC
+///factorial
+/*int fact(int n)
+{
+    if(n<0)return -1;
+    if(n==0)return 1;
+    //int ans=fact(n-1);
+    return n*fact(n-1);
+}
+int main()
+{
+    int n;
+    cin>>n;
+    int ans=fact(n);
+    cout<<"Factorial:"<<ans<<endl;
+}*/
+///fibonacci number
+/*int Fibonacci(int n)
+{
+    if(n==0)return 0;
+    if(n==1)return 1;
+    int smalloutput1=Fibonacci(n-1);
+    int smalloutput2=Fibonacci(n-2);
+    return smalloutput1+smalloutput2;
+}
+int main()
+{
+    cout<<"Fibonnaci:"<<Fibonacci(3)<<endl;
+    return 0;
+}*/
+///Power
+/*int power(int x,int n)
+{
+    if(n==0)return 1;
+    int A=power(x,n-1);
+    return x*A;
+}
+int main()
+{
+    cout<<"Power:"<<power(2,3)<<endl;
+    return 0;
+}*/
