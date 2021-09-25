@@ -705,3 +705,46 @@ int main()
     cout<<"Power:"<<power(2,3)<<endl;
     return 0;
 }*/
+///Print Numbers
+/*void print(int n)
+{
+
+    if(n==0)return;
+    cout<<n<<endl; //for before
+    print(n-1);
+    return;
+    //cout<<n<<endl; //for after
+}
+int main()
+{
+    cout<<"Printed Numbers:"<<endl;
+    print(10);
+    return 0;
+}*/
+///Count Digits
+/*int Count(int n)
+{
+    if(n==0)return 0;
+    int A=Count(n/10);
+    return A+1;
+}
+int main()
+{
+    cout<<"No.of digits:"<<Count(432)<<endl;
+    return 0;
+}*/
+///Sum of Digits
+/*int Sum(int n)
+{
+
+    if(n==0)return 0;
+    int A=Sum(n/10);
+    int k=n%10;
+    return A+k;
+
+}
+int main()
+{
+    cout<<"Sum digits:"<<Sum(432)<<endl;
+    return 0;
+}*/
