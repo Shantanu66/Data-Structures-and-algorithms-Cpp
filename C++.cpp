@@ -863,3 +863,14 @@ int main()
     }
     return 0;
 }*/
+///SUM OF ARRAY
+/*int Sum(int a[],int n)
+{
+    if(n==0)return 0;
+    return a[0]+Sum(a+1,n-1);
+}*/
+/*int Sum2(int a[],int n)
+{
+    if(n==0)return 0;
+    return Sum2(a,n-1)+a[n-1];
+}*/
