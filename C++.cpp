@@ -874,3 +874,12 @@ int main()
     if(n==0)return 0;
     return Sum2(a,n-1)+a[n-1];
 }*/
+///using index
+/*int Sum3(int a[],int n,int i)
+{
+    if(i==n)
+    {
+        return 0;
+    }
+    return a[i]+Sum3(a,n,i+1);
+}
