@@ -882,4 +882,17 @@ int main()
         return 0;
     }
     return a[i]+Sum3(a,n,i+1);
+}
+int main()
+{
+    int n;
+    cin>>n;
+    int a[n];
+    int i=0;
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    cout<<"SUM:"<<Sum3(a,n,i)<<endl;
+    return 0;
 }*/
