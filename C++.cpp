@@ -747,4 +747,62 @@ int main()
 {
     cout<<"Sum digits:"<<Sum(432)<<endl;
     return 0;
+}///Sum of Digits
+/*int Sum(int n)
+{
+
+    if(n==0)return 0;
+    int A=Sum(n/10);
+    int k=n%10;
+    return A+k;
+
 }
+int main()
+{
+    cout<<"Sum digits:"<<Sum(432)<<endl;
+    return 0;
+}*/
+///Multiplication
+/*int Multiplication(int m,int n)
+{
+    if(n==0)return 0;
+    int Assume=Multiplication(m,n-1);
+    return m+Assume;
+}
+int main()
+{
+    cout<<"Multiplication:"<<Multiplication(5,3)<<endl;
+    return 0;
+}*/
+///Count Zeroes
+/*int Zeroes(int n)
+{
+    if(n==0)return 0;
+    int Assume=Zeroes(n/10);
+    int lastdigit=n%10;
+    if(lastdigit==0)
+    {
+        return 1+Assume;
+    }
+    else
+    {
+        return Assume;
+    }
+}
+int main()
+{
+    cout<<"Zeroes:"<<Zeroes(2002)<<endl;
+    return 0;
+}*/
+///Geometric Sum
+/*double Geometric(int k)
+{
+    if(k==0)return 1;
+    double Assume=Geometric(k-1);
+    return Assume+1.0/pow(2,k);
+}
+int main()
+{
+    cout<<"geometric Sum:"<<Geometric(4)<<endl;
+    return 0;
+}*/
