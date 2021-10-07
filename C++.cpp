@@ -806,3 +806,60 @@ int main()
     cout<<"geometric Sum:"<<Geometric(4)<<endl;
     return 0;
 }*/
+///RECURSION INTERMEDIATE
+///array sorted or not
+/*bool Array(int a[],int n)
+{
+    if(n==0||n==1)return true;
+    if(a[0]>a[1])
+    {
+        return false;
+    }
+    else
+    {
+        bool S=Array(a+1,n-1);
+        return S;
+    }
+
+}*/
+/*bool Array2(int a[],int n)
+{
+    if(n==0||n==1)return true;
+    bool S=Array2(a+1,n-1);
+    if(!S)
+    {
+        return false;
+    }
+    if(a[0]>a[1])
+    {
+        return false;
+    }
+    else
+    {
+        return S;
+    }
+}*/
+/*bool array3(int a[],int n)
+{
+    if(n==0||n==1)return true;
+    if(a[n-2]>a[n-1])return false;
+    return array3(a,n-1);
+}
+int main()
+{
+    int n;
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    if(array3(a,n))
+    {
+        cout<<"Sorted"<<endl;
+    }
+    else{
+        cout<<"Not Sorted"<<endl;
+    }
+    return 0;
+}*/
