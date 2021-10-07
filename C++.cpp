@@ -882,4 +882,4 @@ int main()
         return 0;
     }
     return a[i]+Sum3(a,n,i+1);
-}
+}*/
