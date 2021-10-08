@@ -909,3 +909,18 @@ int main()
     if(key==a[i])return true;
     return CheckElement(a,n,i+1,key);
 }*/
+/*bool CheckElement(int a[],int n,int key)
+{
+    if(n==0)return 0;
+    bool rightbigarray= CheckElement(a+1,n-1,key);
+    if(rightbigarray)return true;
+    if(a[0]==key)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+
+}*/
