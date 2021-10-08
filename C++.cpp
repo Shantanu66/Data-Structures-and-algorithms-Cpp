@@ -896,3 +896,16 @@ int main()
     cout<<"SUM:"<<Sum3(a,n,i)<<endl;
     return 0;
 }*/
+///Check if element is present
+/*bool CheckElement(int a[],int n,int key)
+{
+    if(n==0)return 0;
+    if(key==a[n-1])return true;
+    return CheckElement(a,n-1,key);
+}*/
+/*bool CheckElement(int a[],int n,int i,int key)
+{
+    if(i==n)return 0;
+    if(key==a[i])return true;
+    return CheckElement(a,n,i+1,key);
+}*/
