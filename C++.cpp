@@ -924,3 +924,9 @@ int main()
     }
 
 }*/
+/*bool CheckElement(int a[],int n,int key)
+{
+    if(n==0)return 0;
+    if(key==a[0])return true;
+    return CheckElement(a+1,n-1,key);
+}*/
