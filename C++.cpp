@@ -930,3 +930,27 @@ int main()
     if(key==a[0])return true;
     return CheckElement(a+1,n-1,key);
 }*/
+/*int main()
+{
+    int n;
+    cin>>n;
+    int i=0;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    cout<<"Enter element to be found"<<endl;
+    int key;
+    cin>>key;
+    if(CheckElement(a,n,i,key))
+    {
+        cout<<"Element is present"<<endl;
+    }
+    else
+    {
+        cout<<"Element is not present"<<endl;
+    }
+
+    return 0;
+}*/
