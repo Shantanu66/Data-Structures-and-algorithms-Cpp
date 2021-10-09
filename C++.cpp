@@ -982,3 +982,15 @@ int main()
     AllIndex(a,n,num,i);
     return 0;
 }*/
+///Occurence of number
+///using int
+/*int Frequency(int a[],int n,int num,int i,int Count)
+{
+    if(i==n)return Count;
+    if(a[i]==num)
+    {
+        //Count+=1;
+        return Frequency(a,n,num,i+1,Count)+1;
+    }
+    return Frequency(a,n,num,i+1,Count);
+}*/
