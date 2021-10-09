@@ -965,3 +965,20 @@ int main()
     return AllIndex(a,n,num,i+1);
 
 }
+int main()
+{
+    int n;
+    cin>>n;
+    int i=0;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    int num;
+    cout<<"Enter number to find its index"<<endl;
+    cin>>num;
+    cout<<"Index of number is at:"<<endl;
+    AllIndex(a,n,num,i);
+    return 0;
+}*/
