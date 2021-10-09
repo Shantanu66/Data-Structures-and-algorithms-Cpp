@@ -995,7 +995,7 @@ int main()
     return Frequency(a,n,num,i+1,Count);
 }*/
 ///using void and reference
-/*void Frequency(int a[],int n,int num,int i,int &Count)
+void Frequency(int a[],int n,int num,int i,int &Count)
 {
     if(i==n)return;
     if(a[i]==num)
@@ -1003,4 +1003,4 @@ int main()
         Count++;
     }
     return Frequency(a,n,num,i+1,Count);
-}*/
+}
