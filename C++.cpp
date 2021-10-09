@@ -954,3 +954,14 @@ int main()
 
     return 0;
 }*/
+///Print all position
+/*void AllIndex(int a[],int n,int num,int i)
+{
+    if(i==n)return;
+    if(a[i]==num)
+    {
+        cout<<i<<",";
+    }
+    return AllIndex(a,n,num,i+1);
+
+}
