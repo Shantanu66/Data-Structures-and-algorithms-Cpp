@@ -1062,7 +1062,7 @@ int main()
     int num;
     cout<<"Enter number to find its occurence index"<<endl;
     cin>>num;
-    int k=StoreAllIndex(a,n,num,i,res,j);
+    
     cout<<"Number is at index:"<<endl;
     for(int i=0;i<k;i++)
     {
