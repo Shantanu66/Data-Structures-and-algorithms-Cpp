@@ -1004,3 +1004,22 @@ int main()
     }
     return Frequency(a,n,num,i+1,Count);
 }*/
+/*int main()
+{
+    int n;
+    cin>>n;
+    int i=0;
+    int Count=0;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    int num;
+    cout<<"Enter number to find its occurence"<<endl;
+    cin>>num;
+    //Frequency(a,n,num,i,Count);
+    //cout<<"Frequency of number is:"<<Count<<endl;
+    cout<<"Frequency of number is:"<<Frequency(a,n,num,i,Count)<<endl;
+    return 0;
+}*/
