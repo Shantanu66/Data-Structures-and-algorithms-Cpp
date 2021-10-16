@@ -1034,3 +1034,14 @@ int main()
     }
     return StoreAllIndex(a,n,num,i+1,result);
 }*/
+///using array
+/*int StoreAllIndex(int a[],int n,int num,int i,int result[],int j)
+{
+    if(i==n)return 0;
+    if(a[i]==num)
+    {
+        result[j]=i;
+        return 1+StoreAllIndex(a,n,num,i+1,result,j+1);
+    }
+    return 0+StoreAllIndex(a,n,num,i+1,result,j);
+}
