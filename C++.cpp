@@ -1107,3 +1107,19 @@ int main()
     rev_num=rev_num*10+(num%10);
     Reverse(num/10,rev_num);
 }
+int main()
+{
+    int num;
+    cin>>num;
+    int rev_num=0;
+    cout<<Reverse(num,rev_num)<<endl;
+    if(Reverse(num,rev_num)==num)
+    {
+        cout<<"Palindrome"<<endl;
+    }
+    else
+    {
+        cout<<"Not Palindrome"<<endl;
+    }
+
+}*/
