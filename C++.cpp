@@ -1079,3 +1079,24 @@ int main()
     }
     return false;
 }
+int main()
+{
+    int n;
+    cin>>n;
+    int a[n];
+    int start=0;
+    int end=n-1;
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    bool k=CheckPalindrome(a,n,start,end);
+    if(k==true)
+    {
+        cout<<"Palindrome"<<endl;
+    }
+    else
+    {
+        cout<<"Not Palindrome"<<endl;
+    }
+}*/
