@@ -1045,3 +1045,28 @@ int main()
     }
     return 0+StoreAllIndex(a,n,num,i+1,result,j);
 }
+int main()
+{
+    int n;
+    cin>>n;
+    //vector<int> result;
+    int i=0;
+    int Count=0;
+    int a[n];
+    int j=0;
+    int res[10];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    int num;
+    cout<<"Enter number to find its occurence index"<<endl;
+    cin>>num;
+    int k=StoreAllIndex(a,n,num,i,res,j);
+    cout<<"Number is at index:"<<endl;
+    for(int i=0;i<k;i++)
+    {
+        cout<<res[i]<<",";
+    }
+    return 0;
+}*/
