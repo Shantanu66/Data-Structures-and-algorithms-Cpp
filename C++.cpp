@@ -1023,3 +1023,14 @@ int main()
     cout<<"Frequency of number is:"<<Frequency(a,n,num,i,Count)<<endl;
     return 0;
 }*/
+///Store all position of an element
+///using vector
+/*void StoreAllIndex(int a[],int n,int num,int i,vector<int> &result)
+{
+    if(i==n)return;
+    if(a[i]==num)
+    {
+        result.push_back(i);
+    }
+    return StoreAllIndex(a,n,num,i+1,result);
+}*/
