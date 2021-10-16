@@ -1100,3 +1100,10 @@ int main()
         cout<<"Not Palindrome"<<endl;
     }
 }*/
+///Palindrome of number
+/*int Reverse(int num,int rev_num)
+{
+    if(num<=0)return rev_num;
+    rev_num=rev_num*10+(num%10);
+    Reverse(num/10,rev_num);
+}
