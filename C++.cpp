@@ -1070,3 +1070,12 @@ int main()
     }
     return 0;
 }*/
+/*bool CheckPalindrome(int a[],int n,int start,int end)
+{
+    if(start>end)return true;
+    if(a[start]==a[end])
+    {
+        return CheckPalindrome(a,n,start+1,end-1);
+    }
+    return false;
+}
