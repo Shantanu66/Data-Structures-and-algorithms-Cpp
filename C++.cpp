@@ -1091,5 +1091,12 @@ int main()
         cin>>a[i];
     }
     bool k=CheckPalindrome(a,n,start,end);
-    
+    if(k==true)
+    {
+        cout<<"Palindrome"<<endl;
+    }
+    else
+    {
+        cout<<"Not Palindrome"<<endl;
+    }
 }*/
