@@ -1150,3 +1150,15 @@ int main()
     cout<<"Length is:"<<length(input);
     return 0;
 }*/
+///replace character
+/*void Replace(char input[],char a,char x)
+{
+    if(input[0]=='\0')return;
+    if(input[0]==a)
+    {
+        input[0]=x;
+    }
+    cout<<input[0]<<" ";
+    Replace(input+1,a,x);
+
+}
