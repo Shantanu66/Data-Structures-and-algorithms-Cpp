@@ -1123,3 +1123,17 @@ int main()
     }
 
 }*/
+///RECURSION ADVANCED
+///print and reverse character array
+/*void print(char a[])
+{
+    if(a[0]=='\0')return;
+    print(a+1);
+    cout<<a[0]<<" ";
+}
+int main()
+{
+    char input[100];
+    cin.getline(input,100);
+    print(input);
+}*/
