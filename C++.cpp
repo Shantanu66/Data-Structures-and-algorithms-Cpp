@@ -1169,7 +1169,9 @@ int main()
     char a;
     char x;
     cout<<"Enter character to be replaced:"<<endl;
-    
+    cin>>a;
+    cout<<"Enter the new character:"<<endl;
+    cin>>x;
     cout<<"Replaced String:"<<endl;
     Replace(input,a,x);
 }*/
