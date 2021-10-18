@@ -1143,3 +1143,10 @@ int main()
     if(input[0]=='\0')return 0;
     return 1+length(input+1);
 }
+int main()
+{
+    char input[100];
+    cin.getline(input,100);
+    cout<<"Length is:"<<length(input);
+    return 0;
+}*/
