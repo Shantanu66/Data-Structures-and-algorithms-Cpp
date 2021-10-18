@@ -1162,3 +1162,14 @@ int main()
     Replace(input+1,a,x);
 
 }
+int main()
+{
+    char input[100];
+    cin.getline(input,100);
+    char a;
+    char x;
+    cout<<"Enter character to be replaced:"<<endl;
+    
+    cout<<"Replaced String:"<<endl;
+    Replace(input,a,x);
+}*/
