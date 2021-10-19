@@ -1206,3 +1206,17 @@ int main()
     cout<<input<<endl;
     return 0;
 }*/
+///Remove Duplicates
+/*void RemoveDuplicates(char a[])
+{
+    if(a[0]=='\0')return;
+    if(a[0]==a[1])
+    {
+        int i=0;
+        while(a[i]!='\0')
+        {
+            a[i]=a[i+1];
+            i++;
+        }
+        RemoveDuplicates(a);
+    }
