@@ -1230,7 +1230,6 @@ int main()
     cout<<"Enter String:"<<endl;
     cin.getline(input,100);
     cout<<"New String:"<<endl;
-    RemoveDuplicates(input);
-    cout<<input<<endl;
+    
     return 0;
 }*/
