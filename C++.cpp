@@ -1219,4 +1219,18 @@ int main()
             i++;
         }
         RemoveDuplicates(a);
+    }else
+    {
+        RemoveDuplicates(a+1);
     }
+}
+int main()
+{
+    char input[100];
+    cout<<"Enter String:"<<endl;
+    cin.getline(input,100);
+    cout<<"New String:"<<endl;
+    RemoveDuplicates(input);
+    cout<<input<<endl;
+    return 0;
+}*/
