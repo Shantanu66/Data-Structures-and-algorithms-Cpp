@@ -1194,3 +1194,15 @@ int main()
         Remove(a,s);
     }
 }
+int main()
+{
+    char input[100];
+    cin.getline(input,100);
+    char a;
+    cout<<"Enter character to remove:"<<endl;
+    cin>>a;
+    cout<<"New String:"<<endl;
+    Remove(input,a);
+    cout<<input<<endl;
+    return 0;
+}*/
