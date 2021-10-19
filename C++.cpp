@@ -1226,7 +1226,7 @@ int main()
 }
 int main()
 {
-    char input[100];
+    char input[50];
     cout<<"Enter String:"<<endl;
     cin.getline(input,100);
     cout<<"New String:"<<endl;
