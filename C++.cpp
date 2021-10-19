@@ -1175,3 +1175,22 @@ int main()
     cout<<"Replaced String:"<<endl;
     Replace(input,a,x);
 }*/
+///remove character
+/*void Remove(char a[],char s)
+{
+    if(a[0]=='\0')return;
+    if(a[0]!=s)
+    {
+        Remove(a+1,s);
+    }
+    else
+    {
+        int i=0;
+        while(a[i]!='\0')
+        {
+            a[i]=a[i+1];
+            i++;
+        }
+        Remove(a,s);
+    }
+}
