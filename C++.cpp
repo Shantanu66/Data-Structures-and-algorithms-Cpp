@@ -1230,3 +1230,16 @@ int main()
     cout<<input<<endl;
     return 0;
 }*/
+///Print all subsequences
+///using String
+///Store using vector
+/*void PrintSubsequences(string input,string output,vector<string> &store)
+{
+    if(input.length()==0)
+    {
+        store.push_back(output);
+        return;
+    }
+    PrintSubsequences(input.substr(1),output,store);
+    PrintSubsequences(input.substr(1),output+input[0],store);
+}
