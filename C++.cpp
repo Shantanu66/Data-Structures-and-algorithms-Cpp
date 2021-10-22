@@ -1243,3 +1243,16 @@ int main()
     PrintSubsequences(input.substr(1),output,store);
     PrintSubsequences(input.substr(1),output+input[0],store);
 }
+int main()
+{
+    string input;
+    vector<string> store;
+    cout<<"Enter String"<<endl;
+    getline(cin,input);
+    string output="";
+    PrintSubsequences(input,output,store);
+    for(int i=0;i<store.size();i++)
+    {
+        cout<<store[i]<<endl;
+    }
+}*/
