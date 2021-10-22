@@ -1269,3 +1269,12 @@ int main()
     output[i]=input[0];
     PrintSubsequences(input+1,output,i+1);
 }
+int main()
+{
+    char input[100];
+    cout<<"Enter String"<<endl;
+    cin.getline(input,100);
+    char output[10];
+    int i=0;
+    PrintSubsequences(input,output,i);
+}*/
