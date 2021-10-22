@@ -1265,5 +1265,7 @@ int main()
         cout<<output<<endl;
         return;
     }
-    
+    PrintSubsequences(input+1,output,i);
+    output[i]=input[0];
+    PrintSubsequences(input+1,output,i+1);
 }
