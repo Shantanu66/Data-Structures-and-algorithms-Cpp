@@ -1276,5 +1276,5 @@ int main()
     cin.getline(input,100);
     char output[10];
     int i=0;
-    PrintSubsequences(input,output,i);
+    
 }*/
