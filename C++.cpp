@@ -1256,3 +1256,14 @@ int main()
         cout<<store[i]<<endl;
     }
 }*/
+///using array
+/*void PrintSubsequences(char input[],char output[],int i)
+{
+    if(input[0]=='\0')
+    {
+        output[i]='\0';
+        cout<<output<<endl;
+        return;
+    }
+    
+}
