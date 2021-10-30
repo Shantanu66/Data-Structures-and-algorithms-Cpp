@@ -1314,3 +1314,18 @@ int main()
     int n=strlen(input);
     Convert(input,n);
 }*/
+///Print all permutation of string
+/*void permutation(char str[],int i)
+{
+    if(str[i]=='\0')
+    {
+        cout<<str<<endl;
+        return;
+    }
+    for(int j=i;str[j]!='\0';j++)
+    {
+        swap(str[j],str[i]);
+        permutation(str,i+1);
+        swap(str[j],str[i]);
+    }
+}
