@@ -1278,3 +1278,15 @@ int main()
     int i=0;
     PrintSubsequences(input,output,i);
 }*/
+///Convert String to int
+/*int Convert(char input[],int n)
+{
+    if(n==0)
+    {
+        return 0;
+    }
+    int smallans=Convert(input,n-1);
+    int lastdigit=input[n-1]-'0';
+    int ans=smallans*10+lastdigit;
+    return ans;
+}
