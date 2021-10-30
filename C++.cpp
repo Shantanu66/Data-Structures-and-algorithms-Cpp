@@ -1329,3 +1329,10 @@ int main()
         swap(str[j],str[i]);
     }
 }
+int main()
+{
+    char str[100];
+    cin.getline(str,100);
+    int i=0;
+    permutation(str,i);
+}*/
