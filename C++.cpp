@@ -1344,3 +1344,10 @@ int main()
     if(N<0)return 0;
     return countways(N-1)+countways(N-2)+countways(N-3);
 }
+int main()
+{
+    int n;
+    cin>>n;
+    cout<<"No of possible ways:"<<countways(n)<<endl;
+    return 0;
+}*/
