@@ -1351,3 +1351,10 @@ int main()
     cout<<"No of possible ways:"<<countways(n)<<endl;
     return 0;
 }*/
+///Tower of Hanoi
+/*int HanoiSteps(int N)
+{
+    if(N==0)return 0;
+    if(N==1)return 1;
+    return HanoiSteps(N-1)+1+HanoiSteps(N-1);
+}
