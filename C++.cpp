@@ -1297,3 +1297,13 @@ int main()
     int n=strlen(input);
     cout<< Convert(input,n)<<endl;
 }*/
+/*void Convert(char input[],int n)
+{
+    if(n==0)
+    {
+        return;
+    }
+    int s=input[0]-'0';
+    cout<<s;
+    return Convert(input+1,n-1);
+}
