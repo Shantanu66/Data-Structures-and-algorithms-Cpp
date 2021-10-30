@@ -1358,3 +1358,11 @@ int main()
     if(N==1)return 1;
     return HanoiSteps(N-1)+1+HanoiSteps(N-1);
 }
+///Print steps in tower of hanoi
+void PrintSteps(int N,char s,char h,char d)
+{
+    if(N==0)return;
+    PrintSteps(N-1,s,d,h);
+    cout<<"Moving disk"<<" "<<N<<" "<<"from"<<" "<<s<<"->"<<d<<endl;
+    PrintSteps(N-1,h,s,d);
+}
