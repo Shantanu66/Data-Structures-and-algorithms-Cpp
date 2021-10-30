@@ -1290,3 +1290,10 @@ int main()
     int ans=smallans*10+lastdigit;
     return ans;
 }
+int main()
+{
+    char input[100];
+    cin>>input;
+    int n=strlen(input);
+    cout<< Convert(input,n)<<endl;
+}*/
