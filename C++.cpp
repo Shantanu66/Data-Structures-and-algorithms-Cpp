@@ -1307,3 +1307,10 @@ int main()
     cout<<s;
     return Convert(input+1,n-1);
 }
+int main()
+{
+    char input[100];
+    cin>>input;
+    int n=strlen(input);
+    Convert(input,n);
+}*/
