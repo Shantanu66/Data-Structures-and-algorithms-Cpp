@@ -1366,3 +1366,10 @@ void PrintSteps(int N,char s,char h,char d)
     cout<<"Moving disk"<<" "<<N<<" "<<"from"<<" "<<s<<"->"<<d<<endl;
     PrintSteps(N-1,h,s,d);
 }
+int main()
+{
+    int n;
+    cin>>n;
+    cout<<"No of steps:"<<HanoiSteps(n)<<endl;
+    PrintSteps(n,'S','H','D');
+}*/
