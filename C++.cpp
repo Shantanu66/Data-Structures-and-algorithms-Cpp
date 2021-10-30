@@ -1336,3 +1336,11 @@ int main()
     int i=0;
     permutation(str,i);
 }*/
+///Staircase problem
+/*int countways(int N)
+{
+    if(N==0||N==1)return 1;
+    //if(N==2)return 2;
+    if(N<0)return 0;
+    return countways(N-1)+countways(N-2)+countways(N-3);
+}
