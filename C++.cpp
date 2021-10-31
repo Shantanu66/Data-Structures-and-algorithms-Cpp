@@ -1408,4 +1408,6 @@ int main()
         j++;
     }
 
-}
+}void MergeSort(int a[],int s,int e)
+{
+    if(s>=e)return;
