@@ -1373,3 +1373,10 @@ int main()
     cout<<"No of steps:"<<HanoiSteps(n)<<endl;
     PrintSteps(n,'S','H','D');
 }*/
+///MERGE SORT
+/*void MergeArray(int x[],int y[],int a[],int s,int e)
+{
+    int mid=(s+e)/2;
+    int i=s;
+    int j=mid+1;
+    int k=s;
