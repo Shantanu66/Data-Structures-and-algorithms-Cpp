@@ -1419,4 +1419,8 @@ int main()
     {
         x[i]=a[i];
 
+    }int y[100];
+    for(int i=mid+1;i<=e;i++)
+    {
+        y[i]=a[i];
     }
