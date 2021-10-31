@@ -1,102 +1,105 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 ///Cpp Version check
 int main()
 {
-    if (__cplusplus == 201703L) cout << "C++17\n";
-    else if (__cplusplus == 201402L) cout << "C++14\n";
-    else if (__cplusplus == 201103L) cout << "C++11\n";
-    else if (__cplusplus == 199711L) cout << "C++98\n";
-    else cout << "pre-standard C++\n";
+    if (__cplusplus == 201703L)
+        cout << "C++17\n";
+    else if (__cplusplus == 201402L)
+        cout << "C++14\n";
+    else if (__cplusplus == 201103L)
+        cout << "C++11\n";
+    else if (__cplusplus == 199711L)
+        cout << "C++98\n";
+    else
+        cout << "pre-standard C++\n";
 }
 
 ///Template
 template <typename T>
 T myMax(T x, T y)
 {
-   return (x > y)? x: y;
+    return (x > y) ? x : y;
 }
 
 int main()
 {
-  cout << myMax<int>(3, 7) << endl;
-  cout << myMax<double>(3.0, 7.0) << endl;
-  cout << myMax<char>('g', 'e') << endl;
+    cout << myMax<int>(3, 7) << endl;
+    cout << myMax<double>(3.0, 7.0) << endl;
+    cout << myMax<char>('g', 'e') << endl;
 
-  return 0;
+    return 0;
 }
-template<typename T>      //for all DT a single function use template
-T mymax(T a,T b)
+template <typename T> //for all DT a single function use template
+T mymax(T a, T b)
 {
-    return (a>b)?a:b;
+    return (a > b) ? a : b;
 }
 int main()
 {
-    cout<<mymax<int>(5,6)<<endl;
-    cout<<mymax<char>('a','b')<<endl;
+    cout << mymax<int>(5, 6) << endl;
+    cout << mymax<char>('a', 'b') << endl;
 }
 int main()
 {
     int n;
-    cout<<"Enter the number of elements:";
-    cin>>n;
+    cout << "Enter the number of elements:";
+    cin >> n;
     int a[n];
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
     {
-        cin>>a[i];
+        cin >> a[i];
     }
-    int largest=a[0];
+    int largest = a[0];
     //int largest=INT_MIN;
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
     {
-        if(a[i]>largest)
+        if (a[i] > largest)
         {
-            largest=a[i];
+            largest = a[i];
         }
     }
-    cout<<"Largest element:"<<largest<<endl;
-return 0;
+    cout << "Largest element:" << largest << endl;
+    return 0;
 }
 int main()
 {
-   int a,b;
-   cout<<"Enter elements:"<<endl;
-   cin>>a>>b;
-   cout<<"Before Swapping:"<<endl;
-   cout<<"a:"<<a<<endl;
-   cout<<"b:"<<b<<endl;
-   int temp=a;
-   a=b;
-   b=temp;
-   a=a^b;
-   b=a^b;
-   a=a^b;
-   swap(a,b);
-   cout<<"After Swapping:"<<endl;
-   cout<<"a:"<<a<<endl;
-   cout<<"b:"<<b<<endl;
+    int a, b;
+    cout << "Enter elements:" << endl;
+    cin >> a >> b;
+    cout << "Before Swapping:" << endl;
+    cout << "a:" << a << endl;
+    cout << "b:" << b << endl;
+    int temp = a;
+    a = b;
+    b = temp;
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+    swap(a, b);
+    cout << "After Swapping:" << endl;
+    cout << "a:" << a << endl;
+    cout << "b:" << b << endl;
 
-   return 0;
+    return 0;
 }
 int main()
 {
-    cout<<"Enter no. of elements:"<<endl;
+    cout << "Enter no. of elements:" << endl;
     int n;
-    cin>>n;
+    cin >> n;
     int a[n];
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
     {
 
-        cin>>a[i];
-        cout<<"Elements before:"<<a[i]<<endl;
-
-
+        cin >> a[i];
+        cout << "Elements before:" << a[i] << endl;
     }
-    for(int i=n-1;i>=0;i--)
+    for (int i = n - 1; i >= 0; i--)
     {
 
-        cout<<"Elements after:"<<a[i]<<endl;
+        cout << "Elements after:" << a[i] << endl;
     }
     return 0;
 }
@@ -104,246 +107,245 @@ int main()
 template <class T, int max>
 int arrMin(T arr[], int n)
 {
-   int m = max;
-   for (int i = 0; i < n; i++)
-      if (arr[i] < m)
-         m = arr[i];
+    int m = max;
+    for (int i = 0; i < n; i++)
+        if (arr[i] < m)
+            m = arr[i];
 
-   return m;
+    return m;
 }
 
 int main()
 {
-   int arr1[]  = {10, 20, 15, 12};
-   int n1 = sizeof(arr1)/sizeof(arr1[0]);
+    int arr1[] = {10, 20, 15, 12};
+    int n1 = sizeof(arr1) / sizeof(arr1[0]);
 
-   char arr2[] = {1, 2, 3};
-   int n2 = sizeof(arr2)/sizeof(arr2[0]);
+    char arr2[] = {1, 2, 3};
+    int n2 = sizeof(arr2) / sizeof(arr2[0]);
 
-   // Second template parameter to arrMin must be a constant
-   cout << arrMin<int, 10000>(arr1, n1) << endl;
-   cout << arrMin<char, 256>(arr2, n2);
-   return 0;
+    // Second template parameter to arrMin must be a constant
+    cout << arrMin<int, 10000>(arr1, n1) << endl;
+    cout << arrMin<char, 256>(arr2, n2);
+    return 0;
 }
 ///insert element at specific index
-void insertarray(int a[],int i,int element,int s)
+void insertarray(int a[], int i, int element, int s)
 {
-    s+=1;
-    int e=s-1;
-    while(e>=i)
+    s += 1;
+    int e = s - 1;
+    while (e >= i)
     {
-        a[e+1]=a[e];
+        a[e + 1] = a[e];
         e--;
     }
-    a[i]=element;
-    for(int i=0;i<s;i++)
+    a[i] = element;
+    for (int i = 0; i < s; i++)
     {
-        cout<<a[i]<<" ";
+        cout << a[i] << " ";
     }
 }
 int main()
 {
-    int a[5]={1,2,3,4,5};
+    int a[5] = {1, 2, 3, 4, 5};
     int i;
     int ele;
-    int s=sizeof(a)/sizeof(a[0]);
-    cout<<"Enter inder to insert at:"<<endl;
-    cin>>i;
-    cout<<"Enter element:"<<endl;
-    cin>>ele;
-    insertarray(a,i,ele,s);
+    int s = sizeof(a) / sizeof(a[0]);
+    cout << "Enter inder to insert at:" << endl;
+    cin >> i;
+    cout << "Enter element:" << endl;
+    cin >> ele;
+    insertarray(a, i, ele, s);
 }
 int main()
 {
-    cout<<"Enter the no. of elements:"<<endl;
+    cout << "Enter the no. of elements:" << endl;
     int n;
-    cin>>n;
+    cin >> n;
     int a[n];
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
     {
-       cin>>a[i];
+        cin >> a[i];
     }
-    int start=0;
-    int end_point=n-1;
-    cout<<"Initial Array:"<<endl;
-    for(int i=0;i<n;i++)
+    int start = 0;
+    int end_point = n - 1;
+    cout << "Initial Array:" << endl;
+    for (int i = 0; i < n; i++)
     {
-        cout<<a[i]<<" ";
+        cout << a[i] << " ";
     }
-    cout<<endl;
-    while(start<=end_point)
+    cout << endl;
+    while (start <= end_point)
     {
-        swap(a[start],a[end_point]);
-        start+=1;
-        end_point-=1;
+        swap(a[start], a[end_point]);
+        start += 1;
+        end_point -= 1;
     }
-    cout<<"Final Array:"<<endl;
-    for(int i=0;i<n;i++)
+    cout << "Final Array:" << endl;
+    for (int i = 0; i < n; i++)
     {
-        cout<<a[i]<<" ";
+        cout << a[i] << " ";
     }
-
 
     return 0;
 }
-   int main()
+int main()
 {
-    for(int i=0;i<5;i++)
+    for (int i = 0; i < 5; i++)
     {
-        for(int j=1;j<=5-i;j++)
+        for (int j = 1; j <= 5 - i; j++)
         {
-            cout<<" ";
+            cout << " ";
         }
 
-        for(int k=1;k<=(2*i+1);k++)
+        for (int k = 1; k <= (2 * i + 1); k++)
         {
-            cout<<"*";
+            cout << "*";
         }
-        cout<<endl;
-
+        cout << endl;
     }
 }
 int length(char input[])
 {
-    int count=0;
-    for(int i=0;input[i]!='\0';i++)
+    int count = 0;
+    for (int i = 0; input[i] != '\0'; i++)
     {
-        count+=1;
+        count += 1;
     }
     return count;
 }
 void reverse(char input[])
 {
-    int s=0;
-    int end_point=length(input)-1;
-    while(s<end_point)
+    int s = 0;
+    int end_point = length(input) - 1;
+    while (s < end_point)
     {
-        swap(input[s],input[end_point]);
-        s+=1;
-        end_point-=1;
+        swap(input[s], input[end_point]);
+        s += 1;
+        end_point -= 1;
     }
-
 }
 
 int main()
 {
     char name[100];
-    cout<<"Enter Name:"<<endl;
-    cin.getline(name,100);
-    cout<<"Name is:"<<name<<endl;
-    cout<<"Length is:"<<length(name)<<endl;;
+    cout << "Enter Name:" << endl;
+    cin.getline(name, 100);
+    cout << "Name is:" << name << endl;
+    cout << "Length is:" << length(name) << endl;
+    ;
     reverse(name);
-    cout<<"Reverse arrray:"<<name<<endl;
+    cout << "Reverse arrray:" << name << endl;
     return 0;
 }
-bool stringcomapre(char str1[],char str2[])
+bool stringcomapre(char str1[], char str2[])
 {
-    if(strlen(str1)!=strlen(str2))return false;
-    for(int i=0;i<strlen(str1);i++)     //str1[i]!='\0'
+    if (strlen(str1) != strlen(str2))
+        return false;
+    for (int i = 0; i < strlen(str1); i++) //str1[i]!='\0'
     {
-        if(str1[i]!=str2[i])return false;
+        if (str1[i] != str2[i])
+            return false;
     }
     return true;
 }
 int main()
 {
-    char str1[100],str2[100];
-    cout<<"Enter 2 String:"<<endl;
+    char str1[100], str2[100];
+    cout << "Enter 2 String:" << endl;
     //cin>>str1>>str2;
-    cin.getline(str1,100);
-    cin.getline(str2,100);
-    if(strcmp(str1,str2)==0)
+    cin.getline(str1, 100);
+    cin.getline(str2, 100);
+    if (strcmp(str1, str2) == 0)
     {
-        cout<<"Equal"<<endl;
+        cout << "Equal" << endl;
     }
     else
     {
-        cout<<"Not Equal"<<endl;
+        cout << "Not Equal" << endl;
     }
-    if(stringcomapre(str1,str2))
+    if (stringcomapre(str1, str2))
     {
-        cout<<"Equal"<<endl;
+        cout << "Equal" << endl;
     }
     else
     {
-        cout<<"Not Equal"<<endl;
+        cout << "Not Equal" << endl;
     }
-    int len=strlen(str1);
-    cout<<"Length :"<<" "<<len<<endl;
+    int len = strlen(str1);
+    cout << "Length :"
+         << " " << len << endl;
     return 0;
 }
 int main()
 {
     char a[100];
     char b[100];
-    cout<<"Enter Strings:"<<endl;
-    cin.getline(a,100);
-    cin.getline(b,100);
-    cout<<"Before Copying:"<<endl;
-    cout<<a<<endl;
-    cout<<b<<endl;
+    cout << "Enter Strings:" << endl;
+    cin.getline(a, 100);
+    cin.getline(b, 100);
+    cout << "Before Copying:" << endl;
+    cout << a << endl;
+    cout << b << endl;
     //strcpy(b,a);
     //strncpy(b,a,4);
     //strcat(a,b);
-    cout<<"After Copying:"<<endl;
-    cout<<a<<endl;
-    cout<<b<<endl;
-
+    cout << "After Copying:" << endl;
+    cout << a << endl;
+    cout << b << endl;
 }
 int main()
 {
     char a[100];
     char b[100];
-    cout<<"Enter Strings:"<<endl;
-    cin.getline(a,100);
-    cin.getline(b,100);
-    int n=strlen(a);
-    for(int i=0;i<=strlen(b);i++)
+    cout << "Enter Strings:" << endl;
+    cin.getline(a, 100);
+    cin.getline(b, 100);
+    int n = strlen(a);
+    for (int i = 0; i <= strlen(b); i++)
     {
-     a[i+n]=b[i];
+        a[i + n] = b[i];
     }
-    cout<<"After Concatanation:"<<endl;
-    cout<<a<<endl;
-    cout<<b;
-
+    cout << "After Concatanation:" << endl;
+    cout << a << endl;
+    cout << b;
 }
 void prefixprint(char a[])
 {
-    for(int e=0;a[e]!='\0';e++)
+    for (int e = 0; a[e] != '\0'; e++)
     {
-        for(int i=0;i<=e;i++)
+        for (int i = 0; i <= e; i++)
         {
-            cout<<a[i];
+            cout << a[i];
         }
-        cout<<endl;
+        cout << endl;
     }
 }
 int main()
 {
     char str[100];
-    cout<<"Enter String:"<<endl;
-    cin.getline(str,100);
-    cout<<"Prefix"<<endl;
+    cout << "Enter String:" << endl;
+    cin.getline(str, 100);
+    cout << "Prefix" << endl;
     prefixprint(str);
     return 0;
 }
 void suffixprint(char a[])
 {
-    for(int e=strlen(a);e<=strlen(a);e--)
+    for (int e = strlen(a); e <= strlen(a); e--)
     {
-        for(int i=e;i<=strlen(a);i++)
+        for (int i = e; i <= strlen(a); i++)
         {
-            cout<<a[i];
+            cout << a[i];
         }
-        cout<<endl;
+        cout << endl;
     }
 }
 int main()
 {
     char str[100];
-    cout<<"Enter String:"<<endl;
-    cin.getline(str,100);
-    cout<<"Suffix"<<endl;
+    cout << "Enter String:" << endl;
+    cin.getline(str, 100);
+    cout << "Suffix" << endl;
     suffixprint(str);
     return 0;
 }
@@ -1411,3 +1413,10 @@ int main()
 }void MergeSort(int a[],int s,int e)
 {
     if(s>=e)return;
+    int mid=(s+e)/2;
+    int x[100];
+    for(int i=s;i<=mid;i++)
+    {
+        x[i]=a[i];
+
+    }
