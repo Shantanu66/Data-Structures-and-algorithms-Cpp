@@ -1450,3 +1450,15 @@ int main()
     }
     return 0;
 }*/
+///QUICK SORT
+/*int Partition(int a[],int s,int e)
+{
+    int count=0;
+    int p=e;
+    for(int i=s;i<=e-1;i++)
+    {
+        if(a[i]<a[p])
+        {
+            count++;
+        }
+    }
