@@ -1462,3 +1462,8 @@ int main()
             count++;
         }
     }
+    int pivotlocation=count+s;
+    swap(a[pivotlocation],a[p]);
+    int i=s;
+    int j=e;
+    while(i<pivotlocation && j>pivotlocation)
