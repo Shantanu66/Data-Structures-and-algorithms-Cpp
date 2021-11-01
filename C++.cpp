@@ -1410,7 +1410,8 @@ int main()
         j++;
     }
 
-}void MergeSort(int a[],int s,int e)
+}
+void MergeSort(int a[],int s,int e)
 {
     if(s>=e)return;
     int mid=(s+e)/2;
@@ -1419,8 +1420,14 @@ int main()
     {
         x[i]=a[i];
 
-    }int y[100];
+    }
+    int y[100];
     for(int i=mid+1;i<=e;i++)
     {
         y[i]=a[i];
     }
+    MergeSort(x,s,mid);
+    MergeSort(y,mid+1,e);
+    MergeArray(x,y,a,s,e);
+
+}
