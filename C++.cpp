@@ -1431,3 +1431,22 @@ void MergeSort(int a[],int s,int e)
     MergeArray(x,y,a,s,e);
 
 }
+int main()
+{
+    cout<<"Enter n:"<<endl;
+    int n;
+    cin>>n;
+    int a[n];
+    cout<<"Enter array"<<endl;
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    MergeSort(a,0,n-1);
+    cout<<"Sorted Array using Merge Sort"<<endl;
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    return 0;
+}*/
