@@ -1487,4 +1487,12 @@ int main()
     }
     return pivotlocation;
 }
+void QuickSort(int a[],int s,int e)
+{
+    if(s>=e)return;
+    int p=Partition(a,s,e);
+    QuickSort(a,s,p-1);
+    QuickSort(a,p+1,e);
+
+}
 
