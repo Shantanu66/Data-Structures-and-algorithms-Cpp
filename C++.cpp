@@ -1514,4 +1514,20 @@ int main()
     }
     return 0;
 }*/
+///QUICK SORT METHOD 2
+/*int Partition(int a[],int s,int e)
+{
+    int i=s;
+    int p=e;
+    for(int j=i;j<p;j++)
+    {
+        if(a[j]<a[p])
+        {
+            swap(a[i],a[j]);
+            i++;
+        }
+    }
+    swap(a[i],a[p]);
+    return i;
+}
 
