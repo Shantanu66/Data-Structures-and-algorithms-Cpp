@@ -1467,3 +1467,4 @@ int main()
     int i=s;
     int j=e;
     while(i<pivotlocation && j>pivotlocation)
+    
