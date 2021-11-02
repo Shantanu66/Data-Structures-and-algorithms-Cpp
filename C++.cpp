@@ -1467,4 +1467,24 @@ int main()
     int i=s;
     int j=e;
     while(i<pivotlocation && j>pivotlocation)
-    
+    {
+        if(a[i]>a[pivotlocation])
+        {
+            if(a[j]<a[pivotlocation])
+            {
+                swap(a[i],a[j]);
+                i++;
+                j--;
+            }
+            j--;
+
+        }
+        else
+        {
+            i++;
+            j--;
+        }
+    }
+    return pivotlocation;
+}
+
