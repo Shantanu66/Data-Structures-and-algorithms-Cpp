@@ -1537,4 +1537,23 @@ void QuickSort(int a[],int s,int e)
     QuickSort(a,s,p-1);
     QuickSort(a,p+1,e);
 }
+int main()
+{
+    cout<<"Enter n:"<<endl;
+    int n;
+    cin>>n;
+    int a[n];
+    cout<<"Enter array:"<<endl;
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    QuickSort(a,0,n-1);
+    cout<<"Sorted Array using Quick Sort:"<<endl;
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    return 0;
+}*/
 
