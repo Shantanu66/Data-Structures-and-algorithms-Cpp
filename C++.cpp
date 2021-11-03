@@ -1556,4 +1556,30 @@ int main()
     }
     return 0;
 }*/
+///subarray to find Sum(LeetCode)
+/*void subarray(int a[],int n,int sum)
+{
+    int s=0;
+    int start=0,i;
+    for(int i=0;i<n;i++)
+    {
+        s+=a[i];
+        while(s>sum)
+        {
+            s-=a[start];
+            start++;
+        }
+        if(s==sum)
+        {
+            if(start==i)
+            {
+                cout<<"Sum is directly present at index: "<<start<<endl;
+                return;
+            }
+            cout << "Sum found between indexes "<< start << " and " <<i;
+            return;
+        }
+    }
+    cout<<"No subarray found"<<endl;
+}*/
 
