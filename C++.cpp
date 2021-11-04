@@ -1598,4 +1598,12 @@ int main()
     }
     cout<<"No subarray found"<<endl;
 }*/
+/*int main()
+{
+    int a[] = { 15, 2, 4, 8, 9, 5, 10, 23 };
+    int n = sizeof(a)/sizeof(a[0])
+    int sum = 6;
+    subarray(a, n, sum);
+    return 0;
+}*/
 
