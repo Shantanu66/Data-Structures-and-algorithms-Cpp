@@ -1606,4 +1606,18 @@ int main()
     subarray(a, n, sum);
     return 0;
 }*/
+///Remove adjacent duplicates from a string(using char)
+/*void Remove(char a[])
+{
+    if(a[0]=='\0')return;
+    if(a[1]=='\0')return;
+    if(a[0]==a[1])
+    {
+        int i=0;
+        int j=0;
+        //cout<<i<<endl;
+        while(a[j]==a[i+1])
+        {
+            i++;
+        }
 
