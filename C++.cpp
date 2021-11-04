@@ -1629,4 +1629,23 @@ int main()
         Remove(a);
 
     }
+    else
+    {
+        Remove(a+1);
+    }
+    int start1=0;
+    while(a[start1]!='\0')
+    {
+        if(a[start1]==a[start1+1])
+        {
+            Remove(a);
+        }
+        else
+        {
+            start1++;
+
+        }
+    }
+
+}
 
