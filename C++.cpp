@@ -1582,5 +1582,20 @@ int main()
     }
     cout<<"No subarray found"<<endl;
 }*/
+/*s+=a[j];
+        j++;
+        while(s>sum)
+        {
+            s-=a[start];
+            start++;
+        }
+        if(s==sum)
+        {
+            cout << "Sum found between indexes "<< start << " and " <<j-1;
+            return;
 
+        }
+    }
+    cout<<"No subarray found"<<endl;
+}*/
 
