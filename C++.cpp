@@ -1648,4 +1648,21 @@ int main()
     }
 
 }
+int main()
+{
+    //char rem='\0';
+    char *name=new char[100];
+    cout<<"Enter name:"<<endl;
+    cin.getline(name,100);
+    cout<<"After removal of consequitive duplicates:"<<endl;
+    Remove(name);
+    if(strlen(name)==0)
+    {
+        cout<<"Empty String"<<endl;
+    }
+    else{
+        cout<<name<<endl;
+    }
+    delete []name;
+}*/
 
