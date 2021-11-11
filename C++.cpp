@@ -1718,3 +1718,32 @@ int main()
     }
     delete []name;
 }*/
+///DATA STRUCTURES
+///LINKED LIST
+///Basic creation
+/*class Node
+{
+public:
+    int data;
+    Node *next;
+    Node(int data)
+    {
+        this->data=data;
+        next=NULL;
+    }
+};
+int main()
+{
+    //statically
+    Node n1(2);
+    Node n2(5);
+    n1.next=&n2;
+    cout<<n1.data<<" "<<n2.data<<endl;
+    Node *head=&n1;
+    cout<<head->data<<endl;
+    //dynamically
+    Node *n3=new Node(3);
+    Node *n4=new Node(6);
+    n3->next=n4;
+    return 0;
+}*/
