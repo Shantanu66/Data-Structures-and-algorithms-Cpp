@@ -1747,3 +1747,31 @@ int main()
     n3->next=n4;
     return 0;
 }*/
+///printing a linked list
+/*class Node
+{
+public:
+    int data;
+    Node *next;
+    Node(int data)
+    {
+        this->data=data;
+        next=NULL;
+    }
+};
+///print Nodes(ll)
+void print(Node *head)
+{
+    Node *temp=head;                //good practise
+    while(temp!=NULL)
+    {
+        cout<<temp->data<<"->";
+        temp=temp->next;
+    }
+    cout<<"NULL"<<endl;
+    /*while(head!=NULL)
+    {
+        cout<<head->data<<" ";
+        head=head->next;
+    }*/
+//}
