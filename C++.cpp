@@ -1775,3 +1775,58 @@ void print(Node *head)
         head=head->next;
     }*/
 //}
+///length(iterative)
+/*int length(Node *head)
+{
+    int length=0;
+    Node *temp=head;
+    while(temp!=NULL)
+    {
+        length++;
+        temp=temp->next;
+    }
+    delete temp;
+    return length;
+}*/
+///length(recursive)
+/*int length(Node *head)
+{
+    if(head==NULL)return 0;
+    return 1+length(head->next);
+}
+///print ith node
+void printithnode(Node *head,int i)
+{
+    int n=length(head)-1;
+    if(i<0)
+    {
+        cout<<"Invalid index!"<<endl;
+        return;
+    }
+    int count=1;
+    Node *temp=head;
+    while(count<=i && temp!=NULL)
+    {
+        /*if(count==i)
+        {
+            cout<<"Node at ith index:"<<" "<<temp->data<<endl;
+            return;
+        }
+        else
+        {
+            temp=temp->next;
+            count++;
+        }*/
+        /*temp=temp->next;
+        count++;
+    }
+    if(head)
+    {
+        cout<<"Node at index"<<" "<<i<<":"<<" "<<temp->data<<endl;
+    }
+    else
+    {
+        cout<<"Invalid Index!"<<endl;
+    }
+
+}
