@@ -1830,3 +1830,30 @@ void printithnode(Node *head,int i)
     }
 
 }
+}
+///inserting at tail
+Node* Input()
+{
+    int data;
+    cout<<"Enter data"<<endl;
+    cin>>data;
+    Node *head=NULL;
+    Node *tail=NULL;
+    while(data!=-1)
+    {
+        Node *n=new Node(data);         //dynamically
+        cin>>data;
+        if(head==NULL)
+        {
+            head=n;
+            tail=n;
+        }
+        else
+        {
+            tail->next=n;        //inserting at tail
+            tail=n;              //tail=tail->next;
+        }
+    }
+    return head;
+
+}
