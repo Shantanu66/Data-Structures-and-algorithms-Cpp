@@ -1857,3 +1857,29 @@ Node* Input()
     return head;
 
 }
+//Inserting at head(reverse)
+/*Node* Input()
+{
+    int data;
+    cout<<"Enter data"<<endl;
+    cin>>data;
+    Node *head=NULL;
+    Node *tail=NULL;
+    while(data!=-1)
+    {
+        Node *n=new Node(data);
+        cin>>data;
+        if(head==NULL)
+        {
+            head=n;
+            tail=n;
+        }
+        else
+        {
+            n->next=head;
+            head=n;
+        }
+    }
+    return head;
+
+}*/
