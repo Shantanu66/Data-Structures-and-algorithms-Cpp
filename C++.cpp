@@ -1883,3 +1883,38 @@ Node* Input()
     return head;
 
 }*/
+///Insert at ith position
+/*Node* insertatithposition(Node *head,int i,int data)
+{
+    if(i<0)
+    {
+        cout<<"Invalid index!"<<endl;
+        return head;
+    }
+    Node *temp=head;
+    if(i==0)
+    {
+        Node *n=new Node(data);
+        n->next=temp;
+        temp=n;
+        return temp;
+    }
+    int count=1;
+    while(count<=i-1 && temp!=NULL)
+    {
+        head=head->next;
+        count++;
+    }
+    if(head)
+    {
+        Node *n1=new Node(data);        //1st method to insert
+        /*n1->next=head->next;
+        head->next=n1;*/
+
+        /*Node *copyNode=head->next;
+        head->next=n1;
+        n1->next=copyNode;
+        return temp;
+    }
+    return head;
+}
