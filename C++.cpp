@@ -1918,3 +1918,34 @@ Node* Input()
     }
     return head;
 }
+///Delete Node
+Node* DeleteNodeatithposition(Node *head,int i)
+{
+    if(i<0)return head;
+    if(i==0 && head)
+    {
+        Node *newhead=head;
+        head=head->next;
+        newhead->next=NULL;
+        delete newhead;
+        return head;
+    }
+    Node *current=head;
+    int count=1;
+    while(count<=i-1 && current!=NULL)
+    {
+        current=current->next;
+        count++;
+    }
+    if(current && current->next)
+    {
+        Node *copymemoryleaknode=current->next;
+        current->next=copymemoryleaknode->next;
+        copymemoryleaknode->next=NULL;
+        delete copymemoryleaknode;
+        return head;
+    }
+    cout<<"Invalid Index!"<<endl;
+    return head;
+
+}
