@@ -1949,3 +1949,25 @@ Node* DeleteNodeatithposition(Node *head,int i)
     return head;
 
 }
+///Check if element is present(recursive)
+bool checkelement(Node *head,int data)
+{
+    if(head==NULL)return false;
+    if(data==head->data)return true;
+    return checkelement(head->next,data);
+}
+///Check if element is present(Iterative)
+/*bool checkelement(Node *head,int data)
+{
+    Node *temp=head;
+    int count=0;
+    while(temp!=NULL)
+    {
+        if(temp->data==data)
+        {
+            return true;
+        }
+        temp=temp->next;
+        count++;
+    }
+}*/
