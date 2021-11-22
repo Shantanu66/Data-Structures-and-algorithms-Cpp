@@ -1971,3 +1971,99 @@ bool checkelement(Node *head,int data)
         count++;
     }
 }*/
+/*int main()
+{
+    //statically
+    /*Node n1(2);
+    Node n2(5);
+    Node n3(6);
+    Node n4(7);
+    Node n5(9);
+    Node *head=&n1;
+    n1.next=&n2;
+    n2.next=&n3;
+    n3.next=&n4;
+    n4.next=&n5;
+    print(head);
+    //print(head);                   //pass by value
+    //dynamically
+    Node *a1=new Node(1);
+    Node *a2=new Node(2);
+    Node *a3=new Node(3);
+    Node *a4=new Node(33);
+    a1->next=a2;
+    a2->next=a3;
+    a3->next=a4;
+    print(a1);*/
+    //print(Input());
+    /*int i;
+    Node *head=Input();
+    cout<<"Linked List:"<<endl;
+    print(head);
+    cout<<"Length of linked list is:"<<endl;
+    cout<<length(head)<<endl;
+    /*cout<<"Print ith Node:"<<endl;
+    cout<<"Enter index:"<<endl;
+    cin>>i;
+    printithnode(head,i);*/
+    //int data;
+    /*cout<<"Enter Data:"<<endl;
+    cin>>data;
+    cout<<"Enter index:"<<endl;
+    cin>>i;
+    Node *head1=insertatithposition(head,i,data);   //insert
+    print(head1);*/
+    /*cout<<"Enter index to delete:"<<endl;
+    cin>>i;
+    Node *head2=DeleteNodeatithposition(head,i);     //delete
+    print(head2);*/
+    /*cout<<"Enter element to search:"<<endl;
+    cin>>data;
+    if(checkelement(head,data))
+    {
+        cout<<"Element is present"<<endl;
+    }
+    else
+    {
+        cout<<"Element is not present"<<endl;
+    }
+    return 0;
+}*/
+///Circular Singly Linked List
+/*class Node
+{
+public:
+    int data;
+    Node *next;
+    Node(int data)
+    {
+        this->data=data;
+        next=NULL;
+    }
+};
+Node* Input()
+{
+    int data;
+    cout<<"Enter data"<<endl;
+    cin>>data;
+    Node *head=NULL;
+    Node *tail=NULL;
+    while(data!=-1)
+    {
+        Node *n=new Node(data);         //dynamically
+        cin>>data;
+        if(head==NULL)
+        {
+            head=n;
+            tail=n;
+        }
+        else
+        {
+            tail->next=n;        //inserting at tail
+            tail=n;              //tail=tail->next;
+        }
+    }
+    tail->next=head;
+    return head;
+
+}
