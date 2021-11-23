@@ -2067,3 +2067,65 @@ Node* Input()
     return head;
 
 }
+void print(Node *head)
+{
+    Node *temp=head;                //good practise
+    while(temp->next!=head)
+    {
+        cout<<temp->data<<"->";
+        temp=temp->next;
+    }
+    cout<<temp->data<<endl;
+}
+Node* Insert(Node *head,int i,int data)
+{
+    if(i<0)
+    {
+        cout<<"Invalid index!"<<endl;
+        return head;
+    }
+    Node *temp1=head;
+    Node *temp2=head;
+    Node *temp3=head;
+    Node *tail=NULL;
+    while(temp1->next!=head)
+    {
+        temp1=temp1->next;
+    }
+    tail=temp1;
+    if(i==0)
+    {
+        Node *n=new Node(data);
+        n->next=temp2;
+        temp2=n;
+        tail->next=temp2;
+        return temp2;
+    }
+    int count=1;
+
+    while(count<=i-1 && temp3->next!=head)
+    {
+        temp3=temp3->next;
+        count++;
+    }
+    Node *copynode=temp3->next;
+    Node *n1=new Node(data);
+    temp3->next=n1;
+    n1->next=copynode;
+    return head;
+}
+int main()
+{
+    Node *head=Input();
+    cout<<"Circular Singly Linked List:"<<endl;
+    print(head);
+    int i,data;
+    cout<<"Enter Data:"<<endl;
+    cin>>data;
+    cout<<"Enter index:"<<endl;
+    cin>>i;
+    Node *head2=Insert(head,i,data);
+    cout<<"Circular Singly Linked List after Insertion:"<<endl;
+    print(head2);
+
+}*/
