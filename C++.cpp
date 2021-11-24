@@ -2129,3 +2129,75 @@ int main()
     print(head2);
 
 }*/
+///Josephus Circle(Interview Question using Circular Singly Linked List)
+/*class Node
+{
+public:
+    int data;
+    Node *next;
+    Node(int data)
+    {
+        this->data=data;
+        next=NULL;
+    }
+};
+Node* Input(int s)
+{
+    Node *head=NULL;
+    Node *tail=NULL;
+    for(int i=1;i<=s;i++)
+    {
+        Node *n=new Node(i);
+        if(head==NULL)
+        {
+            head=n;
+            tail=n;
+        }
+        else
+        {
+           tail->next=n;
+           tail=n;
+        }
+    }
+    tail->next=head;
+    return head;
+}
+void print(Node *head)
+{
+    Node *temp=head;                //good practise
+    while(temp->next!=head)
+    {
+        cout<<temp->data<<"->";
+        temp=temp->next;
+    }
+    cout<<temp->data<<endl;
+}
+Node* Josephus(Node *head,int m)
+{
+    Node *temp=head;
+    while(temp->next!=temp)
+    {
+        int count=1;
+        while(count<m-1)
+        {
+            temp=temp->next;
+            count++;
+        }
+        temp->next=temp->next->next;
+        temp=temp->next;
+    }
+    return temp;
+}
+int main()
+{
+    int s,m;
+    cout<<"Enter size(n):"<<endl;
+    cin>>s;
+    Node *head=Input(s);
+    cout<<"Linked List:"<<endl;
+    print(head);
+    cout<<"Enter m:"<<endl;
+    cin>>m;
+    cout<<"Last Element standing:"<<endl;
+    cout<<Josephus(head,m)->data<<endl;
+}*/
