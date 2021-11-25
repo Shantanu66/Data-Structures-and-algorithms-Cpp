@@ -2201,3 +2201,25 @@ int main()
     cout<<"Last Element standing:"<<endl;
     cout<<Josephus(head,m)->data<<endl;
 }*/
+///Reverse a linked list(Recursively)
+/*class Node
+{
+public:
+    int data;
+    Node *next;
+    Node(int data)
+    {
+        this->data=data;
+        next=NULL;
+    }
+};
+void print(Node *head)
+{
+    if(head==NULL)
+    {
+        cout<<"NULL"<<endl;
+        return;
+    }
+    cout<<head->data<<"->";
+    print(head->next);
+}
