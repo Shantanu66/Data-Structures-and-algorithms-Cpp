@@ -2223,3 +2223,35 @@ void print(Node *head)
     cout<<head->data<<"->";
     print(head->next);
 }
+Node* Input()
+{
+    int data;
+    cout<<"Enter data"<<endl;
+    cin>>data;
+    Node *head=NULL;
+    Node *tail=NULL;
+    while(data!=-1)
+    {
+        Node *n=new Node(data);
+        cin>>data;
+        if(head==NULL)
+        {
+            head=n;
+            tail=n;
+        }
+        else
+        {
+            tail->next=n;
+            tail=n;
+        }
+    }
+    return head;
+}
+Node* Reverse(Node *head)
+{
+    if(head==NULL || head->next==NULL)return head;
+    Node *node1=Reverse(head->next);
+    head->next->next=head;
+    head->next=NULL;
+    return node1;
+}
