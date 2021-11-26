@@ -2255,3 +2255,29 @@ Node* Reverse(Node *head)
     head->next=NULL;
     return node1;
 }
+///Print alternate Nodes(Recursively)
+void printalternatenodes(Node *head)
+{
+    if(head==NULL)
+    {
+        return;
+    }
+    cout<<head->data<<" ";
+    if(head->next==NULL)
+    {
+        cout<<head->data<<" ";
+        return;
+    }
+    printalternatenodes(head->next->next);
+    cout<<head->data<<" ";
+}
+int main()
+{
+    Node *head=Input();
+    cout<<"Linked List:"<<endl;
+    print(head);
+    Node *head2=Reverse(head);
+    print(head2);
+    cout<<"Alternate Nodes:"<<endl;
+    printalternatenodes(head);
+}*/
