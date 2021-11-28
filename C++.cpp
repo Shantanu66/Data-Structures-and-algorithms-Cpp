@@ -2281,3 +2281,66 @@ int main()
     cout<<"Alternate Nodes:"<<endl;
     printalternatenodes(head);
 }*/
+///STACK
+///stack implementation using array
+/*class Stack
+{
+    int NextIndex;
+    int *a;
+    int capacity;
+public:
+    Stack()
+    {
+        capacity=4;
+        a=new int[capacity];
+        NextIndex=0;
+    }
+    int Size()
+    {
+        return NextIndex;
+    }
+    bool IsEmpty()
+    {
+        return NextIndex==0;
+    }
+    void push(int element)
+    {
+        if(NextIndex==capacity)                   //dynamic stack implementation
+        {
+            capacity*=2;
+            int *NewArr=new int[capacity];
+            for(int i=0;i<capacity;i++)
+            {
+                NewArr[i]=a[i];
+            }
+            delete []a;
+            a=NewArr;
+        }
+        a[NextIndex]=element;
+        NextIndex++;
+    }
+    void pop()
+    {
+        if(IsEmpty())
+        {
+            cout<<"Stack is Empty"<<endl;
+        }
+        else
+        {
+            NextIndex--;
+        }
+        return;
+    }
+    int top()
+    {
+       if(IsEmpty())
+       {
+           cout<<"Stack is Empty"<<endl;
+           return INT_MIN;
+       }
+       else
+       {
+           return a[NextIndex-1];
+       }
+    }
+};
