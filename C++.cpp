@@ -2344,3 +2344,27 @@ public:
        }
     }
 };
+int main()
+{
+    /*cout<<"Enter n:"<<endl;              //for Static implementation
+    int n;
+    cin>>n;*/
+    /*Stack s1(n);
+    s1.push(10);
+    cout<<s1.top()<<endl;*/
+    /*Stack s2;
+    for(int i=1;i<=10;i++)
+    {
+        s2.push(i);
+    }
+    cout<<"Size of Stack:"<<" "<<s2.Size()<<endl;
+    cout<<"Stack:"<<endl;
+    while(!s2.IsEmpty())
+    {
+        cout<<s2.top()<<" ";
+        s2.pop();
+    }
+    cout<<endl;
+    cout<<"Size of Stack:"<<" "<<s2.Size()<<endl;
+    return 0;
+}*/
