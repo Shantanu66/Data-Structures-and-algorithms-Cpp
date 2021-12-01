@@ -2368,3 +2368,41 @@ int main()
     cout<<"Size of Stack:"<<" "<<s2.Size()<<endl;
     return 0;
 }*/
+///stack implementation using Template(array)
+/*template<typename T>
+class Stack
+{
+    int NextIndex;
+    T *a;
+    int capacity;
+public:
+    Stack()
+    {
+        capacity=4;
+        a=new T[capacity];
+        NextIndex=0;
+    }
+    int Size()
+    {
+        return NextIndex;
+    }
+    bool IsEmpty()
+    {
+        return NextIndex==0;
+    }
+    void push(T element)
+    {
+        if(NextIndex==capacity)                   //dynamic stack implementation
+        {
+            capacity*=2;
+            T *NewArr=new T[capacity];
+            for(int i=0;i<capacity;i++)
+            {
+                NewArr[i]=a[i];
+            }
+            delete []a;
+            a=NewArr;
+        }
+        a[NextIndex]=element;
+        NextIndex++;
+    }
