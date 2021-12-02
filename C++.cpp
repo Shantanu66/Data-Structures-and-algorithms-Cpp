@@ -2406,3 +2406,28 @@ public:
         a[NextIndex]=element;
         NextIndex++;
     }
+    void pop()
+    {
+        if(IsEmpty())
+        {
+            cout<<"Stack is Empty"<<endl;
+        }
+        else
+        {
+            NextIndex--;
+        }
+        return;
+    }
+    T top()
+    {
+       if(IsEmpty())
+       {
+           cout<<"Stack is Empty"<<endl;
+           return 0;                     //0 is valid for all DT
+       }
+       else
+       {
+           return a[NextIndex-1];
+       }
+    }
+};
