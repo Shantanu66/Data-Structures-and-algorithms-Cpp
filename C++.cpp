@@ -2431,3 +2431,52 @@ public:
        }
     }
 };
+int main()
+{
+    Stack<char> s2;
+    for(char i=97;i<=106                  ;i++)
+    {
+        s2.push(i);
+    }
+    cout<<"Size of Stack:"<<" "<<s2.Size()<<endl;
+    cout<<"Stack:"<<endl;
+    while(!s2.IsEmpty())
+    {
+        cout<<s2.top()<<" ";
+        s2.pop();
+    }
+    cout<<endl;
+    cout<<"Size of Stack:"<<" "<<s2.Size()<<endl;
+    Stack<double> s1;
+    for(double i=1.0;i<=10.0;i++)
+    {
+        s1.push(i);
+    }
+    cout<<endl;
+    cout<<"Size of Stack:"<<" "<<s1.Size()<<endl;
+    cout<<"Stack:"<<endl;
+    while(!s1.IsEmpty())
+    {
+        cout<<s1.top()<<" ";
+        s1.pop();
+    }
+    cout<<endl;
+    cout<<"Size of Stack:"<<" "<<s1.Size()<<endl;
+    cout<<endl;
+    Stack<int> s3;
+    int input;
+    cout<<"Enter Elements:"<<endl;
+    while(input!=-1)
+    {
+        cin>>input;
+        s3.push(input);
+    }
+    cout<<"Stack:"<<endl;
+    while(!s3.IsEmpty())
+    {
+        cout<<s3.top()<<" ";
+        s3.pop();
+    }
+    cout<<endl;
+    return 0;
+}*/
