@@ -2480,3 +2480,65 @@ int main()
     cout<<endl;
     return 0;
 }*/
+///Stack implementation using Linked List
+/*template<typename T>
+class Node
+{
+public:
+    T data;
+    Node<T> *next;
+    Node(T data)
+    {
+        this->data=data;
+        next=NULL;
+    }
+};
+template<typename T>
+class Stack
+{
+    Node<T> *head;
+    int size;
+public:
+    Stack()
+    {
+        head=NULL;
+        size=0;
+    }
+    void push(T element)
+    {
+        Node<T> *n1=new Node<T>(element);
+        n1->next=head;
+        head=n1;
+        size++;
+    }
+    void pop()
+    {
+        if(IsEmpty())
+        {
+            cout<<"Empty Stack!"<<endl;
+            return;
+        }
+        Node<T> *temp=head;
+        head=head->next;
+        temp->next=NULL;
+        delete temp;
+        size--;
+    }
+    T top()
+    {
+        if(IsEmpty())
+        {
+            cout<<"Empty Stack!"<<endl;
+            return 0;
+        }
+        return head->data;
+    }
+    int Size()
+    {
+        return size;
+    }
+    bool IsEmpty()
+    {
+        return size==0;
+    }
+};
