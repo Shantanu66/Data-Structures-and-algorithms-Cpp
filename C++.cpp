@@ -2542,3 +2542,21 @@ public:
         return size==0;
     }
 };
+int main()
+{
+    Stack<int> s1;
+    s1.push(20);
+    s1.push(50);
+    s1.push(100);
+    s1.push(58);
+    cout<<s1.top()<<endl;
+    s1.pop();
+    cout<<s1.top()<<" "<<endl;
+    s1.pop();
+    cout<<s1.top()<<" "<<endl;
+    s1.pop();
+    cout<<s1.top()<<" "<<endl;
+    s1.pop();
+    cout<<s1.IsEmpty()<<endl;
+    return 0;
+}*/
