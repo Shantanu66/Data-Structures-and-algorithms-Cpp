@@ -2587,3 +2587,65 @@ int main()
 
    return 0;
 }*/
+///Remove adjacent duplicates(recursively)
+ /*void RemoveDuplicates(char a[])
+{
+    if(a[0]=='\0' || a[1]=='\0')return;
+    while(a[0]==a[1])
+    {
+        int i=0,j=0,count=0;
+        while(a[i]==a[j+1])
+        {
+            j++;
+            count++;
+        }
+        while(a[j]!='\0')
+        {
+            if(count%2==0)
+            {
+                a[i+1]=a[j+1];
+                i++;
+                j++;
+            }
+            else
+            {
+                a[i]=a[j+1];
+                i++;
+                j++;
+            }
+        }
+        RemoveDuplicates(a);
+    }
+    RemoveDuplicates(a+1);
+    int start1=0;
+    while(a[start1]!='\0')
+    {
+        if(a[start1]==a[start1+1])
+        {
+            RemoveDuplicates(a);
+        }
+        else
+        {
+            start1++;
+
+        }
+    }
+
+}
+int main()
+{
+    char *a=new char[100];
+    cout<<"Enter String"<<endl;
+    cin.getline(a,100);
+    cout<<"After removal of consequitive duplicates:"<<endl;
+    RemoveDuplicates(a);
+    if(strlen(a)==0)
+    {
+        cout<<"Empty String"<<endl;
+    }
+    else
+    {
+        cout<<a<<endl;
+    }
+    delete []a;
+}*/
