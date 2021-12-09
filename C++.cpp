@@ -2649,3 +2649,37 @@ int main()
     }
     delete []a;
 }*/
+///QUEUE
+///Queue implementation using array
+/*template<typename T>
+class Queue
+{
+    int NextIndex,FrontIndex;
+    T *arr;
+    int size;
+    int capacity;
+public:
+    Queue()
+    {
+       capacity=5;
+       NextIndex=0;
+       FrontIndex=-1;
+       arr=new T[capacity];
+       size=0;
+    }
+    Queue(int capacity)
+    {
+       this->capacity=capacity;
+       NextIndex=0;
+       FrontIndex=-1;
+       arr=new T[capacity];
+       size=0;
+    }
+    int Size()
+    {
+        return size;
+    }
+    bool IsEmpty()
+    {
+        return size==0;
+    }
