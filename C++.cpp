@@ -2683,3 +2683,30 @@ public:
     {
         return size==0;
     }
+    void push(T element)
+    {
+        if(size==capacity)
+        {
+            //cout<<"Queue is full"<<endl;
+            //return;
+
+            ///Dynamically
+
+            T *newarr=new T[capacity*2];
+            int j=0;
+            for(int i=FrontIndex;i<capacity;i++)
+            {
+                newarr[j]=arr[i];
+                j++;
+            }
+            for(int i=0;i<FrontIndex;i++)
+            {
+                newarr[j]=arr[i];
+                j++;
+            }
+            FrontIndex=0;
+            NextIndex=capacity;
+            capacity*=2;
+            delete []arr;
+            arr=newarr;
+        }
