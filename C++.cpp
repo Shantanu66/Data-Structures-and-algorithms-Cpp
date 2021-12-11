@@ -2710,3 +2710,20 @@ public:
             delete []arr;
             arr=newarr;
         }
+        arr[NextIndex]=element;
+        NextIndex=(NextIndex+1)%capacity;
+        if(FrontIndex==-1)
+        {
+            FrontIndex=0;
+        }
+        size++;
+    }
+    T front()
+    {
+        if(IsEmpty())
+        {
+            cout<<"Queue is Empty!"<<endl;
+            return 0;
+        }
+        return arr[FrontIndex];
+    }
