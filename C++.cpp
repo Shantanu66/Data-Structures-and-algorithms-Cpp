@@ -2727,3 +2727,20 @@ public:
         }
         return arr[FrontIndex];
     }
+     void pop()
+    {
+        if(IsEmpty())
+        {
+            cout<<"Queue is Empty!"<<endl;
+            return;
+        }
+        FrontIndex=(FrontIndex+1)%capacity;
+        size--;
+        if(size==0)                       ///optional
+        {
+            //reset the values
+            NextIndex=0;
+            FrontIndex=-1;
+        }
+    }
+};
