@@ -2772,3 +2772,17 @@ int main()
  cout<<q.Size()<<endl;
  return 0;
 }*/
+
+///queue implementation using Linked List
+/*template<typename T>
+class Node
+{
+public:
+    T data;
+    Node<T> *next;
+    Node(T data)
+    {
+        this->data=data;
+        next=NULL;
+    }
+};
