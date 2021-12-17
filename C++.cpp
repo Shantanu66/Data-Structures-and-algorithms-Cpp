@@ -2786,3 +2786,54 @@ public:
         next=NULL;
     }
 };
+      head=NULL;
+       tail=NULL;
+       size=0;
+    }
+    int Size()
+    {
+        return size;
+    }
+    bool IsEmpty()
+    {
+        return size==0;
+    }
+    void push(T element)
+    {
+        Node<T> *n=new Node<T>(element);
+        if(head==NULL)
+        {
+            head=n;
+            tail=n;
+        }
+        else
+        {
+            tail->next=n;
+            tail=n;
+        }
+        size++;
+    }
+    T front()
+    {
+        if(IsEmpty())
+        {
+            cout<<"Queue is Empty!"<<endl;
+            return 0;
+        }
+        return head->data;
+    }
+    void pop()
+    {
+        if(IsEmpty())
+        {
+            cout<<"Queue is Empty!"<<endl;
+            return;
+        }
+        Node<T> *temp=head;
+        head=head->next;
+        temp->next=NULL;
+        delete temp;
+        size--;
+    }
+
+};
