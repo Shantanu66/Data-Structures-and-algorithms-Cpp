@@ -2837,3 +2837,21 @@ public:
     }
 
 };
+ }
+        Node<T> *temp=head;
+        head=head->next;
+        temp->next=NULL;
+        delete temp;
+        size--;
+    }
+
+};
+int main()
+{
+
+ Queue<int> q;
+ q.push(10);
+ q.push(20);
+ q.push(30);
+ q.push(40);
+ q.push(50);
