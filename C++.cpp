@@ -2880,3 +2880,18 @@ int main()
  cout<<q.IsEmpty()<<endl;
  return 0;
 }*/
+///Reverse a Queue
+/*void Reverse(queue<int> &q)
+{
+    stack<int> s;
+    while(!q.empty())
+    {
+        s.push(q.front());
+        q.pop();
+    }
+    while(!s.empty())
+    {
+        q.push(s.top());
+        s.pop();
+    }
+}
