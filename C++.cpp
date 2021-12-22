@@ -2895,3 +2895,19 @@ int main()
         s.pop();
     }
 }
+int main()
+{
+    queue<int> q;
+    for(int i=1;i<=10;i++)
+    {
+        q.push(i);
+    }
+    Reverse(q);
+    while(!q.empty())
+    {
+        cout<<q.front()<<" ";
+        q.pop();
+    }
+    return 0;
+
+}*/
