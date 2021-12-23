@@ -2911,3 +2911,27 @@ int main()
     return 0;
 
 }*/
+///Reverse a Queue Recursively
+/*void Reverse(queue<int> &q)
+{
+    if(q.empty())return;
+    int a=q.front();
+    q.pop();
+    Reverse(q);
+    q.push(a);
+}
+int main()
+{
+    queue<int> q;
+    for(int i=1;i<=10;i++)
+    {
+        q.push(i);
+    }
+    Reverse(q);
+    while(!q.empty())
+    {
+        cout<<q.front()<<" ";
+        q.pop();
+    }
+    return 0;
+}*/
