@@ -2957,3 +2957,29 @@ public:
         }
     }
 };
+///printing the tree(Recursive)
+void print(TreeNode<int> *root)
+{
+    if(root==NULL)
+    {
+        cout<<"Tree is Empty!"<<endl;
+        return;
+    }
+    cout<<root->data<<":";
+    if(root->children.empty())
+    {
+        cout<<"Leaf Node";
+    }
+    else
+    {
+        for(int i=0;i<root->children.size();i++)
+        {
+           cout<<root->children[i]->data<<",";
+        }
+    }
+    cout<<endl;
+    for(int i=0;i<root->children.size();i++)
+    {
+        print(root->children[i]);
+    }
+}
