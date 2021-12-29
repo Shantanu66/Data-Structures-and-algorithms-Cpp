@@ -2983,3 +2983,28 @@ void print(TreeNode<int> *root)
         print(root->children[i]);
     }
 }
+///Print Iteratively(Level Wise)
+void PrintLevelWise(TreeNode<int> *root)
+{
+    queue<TreeNode<int>*> q;
+    q.push(root);
+    while(!q.empty())
+    {
+        TreeNode<int> *f=q.front();
+        q.pop();
+        cout<<f->data<<":";
+        if(f->children.empty())
+        {
+            cout<<"Leaf Node";
+        }
+        else
+        {
+            for(int i=0;i<f->children.size();i++)
+            {
+               cout<<f->children[i]->data<<",";
+               q.push(f->children[i]);
+            }
+        }
+        cout<<endl;
+     }
+}
