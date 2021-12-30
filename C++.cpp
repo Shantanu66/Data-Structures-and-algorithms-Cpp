@@ -3008,3 +3008,20 @@ void PrintLevelWise(TreeNode<int> *root)
         cout<<endl;
      }
 }
+///take input(Recursive)
+TreeNode<int>* takeinput()
+{
+    int Rootdata;
+    cout<<"Enter data:"<<endl;
+    cin>>Rootdata;
+    TreeNode<int> *root=new TreeNode<int>(Rootdata);
+    int n;
+    cout<<"Enter the number of children of"<<" "<<Rootdata<<endl;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        TreeNode<int> *child=takeinput();
+        root->children.push_back(child);
+    }
+    return root;
+}
