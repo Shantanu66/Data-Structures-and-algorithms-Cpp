@@ -3025,3 +3025,31 @@ TreeNode<int>* takeinput()
     }
     return root;
 }
+///take input(Iterative) Level Wise
+TreeNode<int>* takeinputLevelWise()
+{
+    int RootData;
+    cout<<"Enter Data:"<<endl;
+    cin>>RootData;
+    TreeNode<int> *root=new TreeNode<int>(RootData);
+    queue<TreeNode<int>*> q;
+    q.push(root);
+    while(!q.empty())
+    {
+        TreeNode<int> *f=q.front();
+        q.pop();
+        cout<<"Enter number of children of"<<" "<<f->data<<endl;
+        int n;
+        cin>>n;
+        for(int i=1;i<=n;i++)
+        {
+            int childData;
+            cout<<"Enter"<<" "<<i<<"th"<<" "<<"child of"<<" "<<f->data<<endl;
+            cin>>childData;
+            TreeNode<int> *Child=new TreeNode<int>(childData);
+            q.push(Child);
+            f->children.push_back(Child);
+        }
+    }
+    return root;
+}
