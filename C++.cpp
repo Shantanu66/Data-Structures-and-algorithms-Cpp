@@ -3053,3 +3053,18 @@ TreeNode<int>* takeinputLevelWise()
     }
     return root;
 }
+///Number of Nodes
+int Size(TreeNode<int> *root)
+{
+    if(root==NULL)
+    {
+        cout<<"Empty Tree!"<<endl;
+        return -1;
+    }
+    int ans=0;
+    for(int i=0;i<root->children.size();i++)
+    {
+        ans+=Size(root->children[i]);
+    }
+    return 1+ans;
+}
