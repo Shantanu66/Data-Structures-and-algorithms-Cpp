@@ -3068,3 +3068,23 @@ int Size(TreeNode<int> *root)
     }
     return 1+ans;
 }
+///height of Node
+int height(TreeNode<int> *root)
+{
+    int mh=0;
+    if(root==NULL)
+    {
+        cout<<"Empty Tree!"<<endl;
+        return -1;
+    }
+    for(int i=0;i<root->children.size();i++)
+    {
+        //int h=height(root->children[i]);
+        //if(h>mh)
+        //{
+            //mh=h;
+        //}
+        mh=max(mh,height(root->children[i]));
+    }
+    return 1+mh;
+}
