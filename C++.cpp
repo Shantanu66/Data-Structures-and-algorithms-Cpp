@@ -3088,3 +3088,21 @@ int height(TreeNode<int> *root)
     }
     return 1+mh;
 }
+///print Nodes at depth/level k
+void Nodeatlevelk(TreeNode<int> *root,int k)
+{
+    if(root==NULL)
+    {
+        cout<<"Empty Tree:"<<endl;
+        return;
+    }
+    if(k==0)
+    {
+        cout<<root->data<<" ";
+        return;
+    }
+    for(int i=0;i<root->children.size();i++)
+    {
+        Nodeatlevelk(root->children[i],k-1);
+    }
+}
