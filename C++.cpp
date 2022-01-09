@@ -3106,3 +3106,20 @@ void Nodeatlevelk(TreeNode<int> *root,int k)
         Nodeatlevelk(root->children[i],k-1);
     }
 }
+void Nodeatlevelk2(TreeNode<int> *root,int k,int currentdepth)
+{
+    if(root==NULL)
+    {
+        cout<<"Empty Tree:"<<endl;
+        return;
+    }
+    if(k==currentdepth)
+    {
+        cout<<root->data<<" ";
+        return;
+    }
+    for(int i=0;i<root->children.size();i++)
+    {
+        Nodeatlevelk2(root->children[i],k,currentdepth+1);
+    }
+}
