@@ -3123,3 +3123,19 @@ void Nodeatlevelk2(TreeNode<int> *root,int k,int currentdepth)
         Nodeatlevelk2(root->children[i],k,currentdepth+1);
     }
 }
+///count Leaf Nodes
+int countleafnodes(TreeNode<int> *root)
+{
+    if(root==NULL)
+    {
+        cout<<"Empty Tree:"<<endl;
+        return -1;
+    }
+    if(root->children.size()==0)return 1;
+    int ans=0;
+    for(int i=0;i<root->children.size();i++)
+    {
+        ans+=countleafnodes(root->children[i]);
+    }
+    return ans;
+}
