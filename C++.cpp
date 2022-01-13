@@ -3139,3 +3139,20 @@ int countleafnodes(TreeNode<int> *root)
     }
     return ans;
 }
+void countleafnodes2(TreeNode<int> *root,int &ans)
+{
+    if(root==NULL)
+    {
+        cout<<"Empty Tree:"<<endl;
+        return;
+    }
+    if(root->children.size()==0)
+    {
+        ans++;
+        return;
+    }
+    for(int i=0;i<root->children.size();i++)
+    {
+        countleafnodes2(root->children[i],ans);
+    }
+}
