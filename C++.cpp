@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 ///Cpp Version check
@@ -69,11 +69,11 @@ return 0;
    /*int temp=a;
    a=b;
    b=temp;*/
-   /*a=a^b;
+/*a=a^b;
    b=a^b;
    a=a^b;*/
-   //swap(a,b);
-   /*cout<<"After Swapping:"<<endl;
+//swap(a,b);
+/*cout<<"After Swapping:"<<endl;
    cout<<"a:"<<a<<endl;
    cout<<"b:"<<b<<endl;
 
@@ -1635,7 +1635,7 @@ int main()
     cout<<"No subarray found"<<endl;
 }*/
 
-        /*s+=a[j];
+/*s+=a[j];
         j++;
         while(s>sum)
         {
@@ -1817,7 +1817,7 @@ void printithnode(Node *head,int i)
             temp=temp->next;
             count++;
         }*/
-        /*temp=temp->next;
+/*temp=temp->next;
         count++;
     }
     if(head)
@@ -1911,7 +1911,7 @@ Node* Input()
         /*n1->next=head->next;
         head->next=n1;*/
 
-        /*Node *copyNode=head->next;
+/*Node *copyNode=head->next;
         head->next=n1;
         n1->next=copyNode;
         return temp;
@@ -1995,8 +1995,8 @@ bool checkelement(Node *head,int data)
     a2->next=a3;
     a3->next=a4;
     print(a1);*/
-    //print(Input());
-    /*int i;
+//print(Input());
+/*int i;
     Node *head=Input();
     cout<<"Linked List:"<<endl;
     print(head);
@@ -2006,18 +2006,18 @@ bool checkelement(Node *head,int data)
     cout<<"Enter index:"<<endl;
     cin>>i;
     printithnode(head,i);*/
-    //int data;
-    /*cout<<"Enter Data:"<<endl;
+//int data;
+/*cout<<"Enter Data:"<<endl;
     cin>>data;
     cout<<"Enter index:"<<endl;
     cin>>i;
     Node *head1=insertatithposition(head,i,data);   //insert
     print(head1);*/
-    /*cout<<"Enter index to delete:"<<endl;
+/*cout<<"Enter index to delete:"<<endl;
     cin>>i;
     Node *head2=DeleteNodeatithposition(head,i);     //delete
     print(head2);*/
-    /*cout<<"Enter element to search:"<<endl;
+/*cout<<"Enter element to search:"<<endl;
     cin>>data;
     if(checkelement(head,data))
     {
@@ -2349,10 +2349,10 @@ int main()
     /*cout<<"Enter n:"<<endl;              //for Static implementation
     int n;
     cin>>n;*/
-    /*Stack s1(n);
+/*Stack s1(n);
     s1.push(10);
     cout<<s1.top()<<endl;*/
-    /*Stack s2;
+/*Stack s2;
     for(int i=1;i<=10;i++)
     {
         s2.push(i);
@@ -2588,7 +2588,7 @@ int main()
    return 0;
 }*/
 ///Remove adjacent duplicates(recursively)
- /*void RemoveDuplicates(char a[])
+/*void RemoveDuplicates(char a[])
 {
     if(a[0]=='\0' || a[1]=='\0')return;
     while(a[0]==a[1])
