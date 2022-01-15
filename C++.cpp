@@ -3156,3 +3156,17 @@ void countleafnodes2(TreeNode<int> *root,int &ans)
         countleafnodes2(root->children[i],ans);
     }
 }
+///PreOrder Traversal
+void PreOrder(TreeNode<int> *root)
+{
+    if(root==NULL)
+    {
+        cout<<"Tree is Empty!"<<endl;
+        return;
+    }
+    cout<<root->data<<" ";
+    for(int i=0;i<root->children.size();i++)
+    {
+        PreOrder(root->children[i]);
+    }
+}
