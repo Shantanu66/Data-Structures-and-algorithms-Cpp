@@ -3170,3 +3170,16 @@ void PreOrder(TreeNode<int> *root)
         PreOrder(root->children[i]);
     }
 }
+void PostOrder(TreeNode<int> *root)
+{
+    if(root==NULL)
+    {
+        cout<<"Tree is Empty!"<<endl;
+        return;
+    }
+    for(int i=0;i<root->children.size();i++)
+    {
+        PostOrder(root->children[i]);
+    }
+    cout<<root->data<<" ";
+}
