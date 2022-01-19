@@ -3183,3 +3183,17 @@ void PostOrder(TreeNode<int> *root)
     }
     cout<<root->data<<" ";
 }
+///Delete a Tree
+void DeleteTree(TreeNode<int> *root)
+{
+    if(root==NULL)
+    {
+        cout<<"Tree is Empty!"<<endl;
+        return;
+    }
+    for(int i=0;i<root->children.size();i++)
+    {
+        DeleteTree(root->children[i]);
+    }
+    delete root;
+}
