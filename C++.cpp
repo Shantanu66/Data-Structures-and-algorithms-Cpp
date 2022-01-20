@@ -3197,3 +3197,40 @@ void DeleteTree(TreeNode<int> *root)
     }
     delete root;
 }
+//1 3 2 3 4 2 5 6 2 7 8 0 0 0 0 1 9 0
+//1 2 2 3 0 0
+int main()
+{
+    /*TreeNode<int> *root=new TreeNode<int>(1);       //dynamically
+    TreeNode<int> *n1=new TreeNode<int>(2);
+    TreeNode<int> *n2=new TreeNode<int>(3);
+    root->children.push_back(n1);
+    root->children.push_back(n2);*/
+    //TreeNode<int> *root=takeinput();
+    /*int k=1;
+    int ans=0;
+    TreeNode<int> *root=takeinputLevelWise();
+    cout<<"Tree:"<<endl;
+    //print(root);
+    PrintLevelWise(root);
+    cout<<"Number of Nodes:"<<Size(root)<<endl;
+    cout<<"Height:"<<height(root)<<endl;
+    cout<<"Nodes at level "<<k<<":"<<endl;
+    Nodeatlevelk(root,k);
+    cout<<endl;
+    cout<<"Nodes at level "<<k<<" using 2nd method"<<":"<<endl;
+    Nodeatlevelk2(root,k,0);
+    cout<<endl;
+    cout<<"Number of Leaf Nodes:"<<countleafnodes(root)<<endl;
+    countleafnodes2(root,ans);
+    cout<<"Number of Leaf Nodes using reference variable:"<<ans<<endl;
+    cout<<"PreOrder Traversal:"<<endl;
+    PreOrder(root);
+    cout<<endl;
+    cout<<"PostOrder Traversal:"<<endl;
+    PostOrder(root);
+    cout<<endl;
+    //DeleteTree(root);
+    delete root;
+    return 0;
+}*/
