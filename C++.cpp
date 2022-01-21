@@ -3234,3 +3234,23 @@ int main()
     delete root;
     return 0;
 }*/
+///BINARY TREE
+/*template<typename T>
+class BTNode
+{
+public:
+    T data;
+    BTNode *left;
+    BTNode *right;
+    BTNode(T data)
+    {
+        this->data=data;
+        left=NULL;
+        right=NULL;
+    }
+    ~BTNode()
+    {
+        delete left;
+        delete right;
+    }
+};*/
