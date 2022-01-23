@@ -1,3 +1,3 @@
 # Description
 All codes are in one codebase
-look for the //comments for the topics and question in the c++.exe file
+look for the //comments for the multiple topics and their subsections and aslo the questions in the c++.exe file
