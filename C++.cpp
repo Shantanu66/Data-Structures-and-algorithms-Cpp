@@ -3282,3 +3282,13 @@ public:
         print(root->left);
         print(root->right);
 }
+///print level wise(iteratively)
+void printlevelwise(BTNode<int> *root)
+{
+    if(root==NULL)
+    {
+        cout<<"Empty Tree!"<<endl;
+        return;
+    }
+
+}
