@@ -3292,3 +3292,22 @@ void printlevelwise(BTNode<int> *root)
     }
 
 }
+
+}
+///take input recursive
+BTNode<int>* input()
+{
+    int data;
+    cout<<"Enter Data:"<<endl;
+    cin>>data;
+    if(data==-1)
+    {
+        return NULL;
+    }
+    BTNode<int> *root=new BTNode<int>(data);
+    cout<<"Enter left child of"<<" "<<root->data<<endl;
+    root->left=input();
+    cout<<"Enter right child of"<<" "<<root->data<<endl;
+    root->right=input();
+    return root;
+}
