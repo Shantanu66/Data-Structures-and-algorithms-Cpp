@@ -3311,3 +3311,40 @@ BTNode<int>* input()
     root->right=input();
     return root;
 }
+BTNode<int>* inputlevelwise()
+{
+    int data;
+    cout<<"Enter data:"<<endl;
+    cin>>data;
+    if(data==-1)
+    {
+        return NULL;
+    }
+    BTNode<int> *root=new BTNode<int>(data);
+    queue<BTNode<int>*> q;
+    q.push(root);
+    while(!q.empty())
+    {
+        BTNode<int> *f=q.front();
+        q.pop();
+        cout<<"Enter Left child of "<<f->data<<endl;
+        int leftchilddata;
+        cin>>leftchilddata;
+        if(leftchilddata!=-1)
+        {
+           BTNode<int> *leftchild=new BTNode<int>(leftchilddata);
+           q.push(leftchild);
+           f->left=leftchild;
+        }
+        cout<<"Enter Right child of "<<f->data<<endl;
+        int rightchilddata;
+        cin>>rightchilddata;
+        if(rightchilddata!=-1)
+        {
+           BTNode<int> *rightchild=new BTNode<int>(rightchilddata);
+           q.push(rightchild);
+           f->right=rightchild;
+        }
+    }
+    return root;
+}
