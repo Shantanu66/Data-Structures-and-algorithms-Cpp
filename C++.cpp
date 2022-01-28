@@ -3348,3 +3348,18 @@ BTNode<int>* inputlevelwise()
     }
     return root;
 }
+int Count(BTNode<int> *root)
+{
+    /*int ans=0;
+    if(root->left==NULL && root->right==NULL)
+    {
+        return 1;
+    }
+    ans=Count(root->left)+Count(root->right);
+    return 1+ans;*/
+    /*if(root==NULL)
+    {
+        return 0;
+    }
+    return Count(root->left)+Count(root->right)+1;
+}
