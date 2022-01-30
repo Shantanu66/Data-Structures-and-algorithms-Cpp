@@ -3363,3 +3363,18 @@ int Count(BTNode<int> *root)
     }
     return Count(root->left)+Count(root->right)+1;
 }
+///find Node
+bool findnode(BTNode<int> *root,int key)
+{
+    if(!root)return false;
+    if(root->data==key)return true;
+    return findnode(root->left,key) || findnode(root->right,key);
+
+}
+///find minimum in a BT
+int Minimum(BTNode<int> *root)
+{
+    if(!root)return INT_MAX;
+    int Min=root->data;
+    return min(Minimum(root->left),min(Min,Minimum(root->right)));
+}
