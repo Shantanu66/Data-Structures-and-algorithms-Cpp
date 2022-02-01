@@ -3378,3 +3378,10 @@ int Minimum(BTNode<int> *root)
     int Min=root->data;
     return min(Minimum(root->left),min(Min,Minimum(root->right)));
 }
+void Minimum2(BTNode<int> *root,int &ans)
+{
+    if(!root)return;
+    ans=min(ans,root->data);
+    Minimum2(root->left,ans);
+    Minimum2(root->right,ans);
+}
