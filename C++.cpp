@@ -3385,3 +3385,11 @@ void Minimum2(BTNode<int> *root,int &ans)
     Minimum2(root->left,ans);
     Minimum2(root->right,ans);
 }
+///Find Maximum in BT
+void Maximun(BTNode<int> *root,int &m)
+{
+    if(!root)return;
+    m=max(m,root->data);
+    Maximun(root->left,m);
+    Maximun(root->right,m);
+}
