@@ -3393,3 +3393,19 @@ void Maximun(BTNode<int> *root,int &m)
     Maximun(root->left,m);
     Maximun(root->right,m);
 }
+int Maximum2(BTNode<int> *root)
+{
+    if(!root)return INT_MIN;
+    int Max=root->data;
+    return max(Maximum2(root->left),max(Max,Maximum2(root->right)));
+}
+///count leaf nodes
+int countleafnode(BTNode<int> *root)
+{
+    if(!root)return 0;
+    if(!root->left && !root->right)
+    {
+        return 1;
+    }
+    return countleafnode(root->left)+countleafnode(root->right);
+}
