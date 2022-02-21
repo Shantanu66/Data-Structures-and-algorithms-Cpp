@@ -3409,3 +3409,14 @@ int countleafnode(BTNode<int> *root)
     }
     return countleafnode(root->left)+countleafnode(root->right);
 }
+void countleafnodes2(BTNode<int> *root,int &count)
+{
+    if(!root)return;
+    if(!root->left && !root->right)
+    {
+        count++;
+        return;  //optional
+    }
+    countleafnodes2(root->left,count);
+    countleafnodes2(root->left,count);
+}
