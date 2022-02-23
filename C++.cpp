@@ -3420,3 +3420,18 @@ void countleafnodes2(BTNode<int> *root,int &count)
     countleafnodes2(root->left,count);
     countleafnodes2(root->left,count);
 }
+bool getpath(BTNode<int> *root,int key,vector<int> &v)
+{
+    if(!root)return false;
+    v.push_back(root->data);
+    if(root->data==key)return true;
+    if(getpath(root->left,key,v) || getpath(root->right,key,v))
+    {
+        return true;
+    }
+    else
+    {
+        v.pop_back();
+        return false;
+    }
+}*/
