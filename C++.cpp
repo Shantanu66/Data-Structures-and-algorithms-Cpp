@@ -3435,3 +3435,58 @@ bool getpath(BTNode<int> *root,int key,vector<int> &v)
         return false;
     }
 }*/
+//1 2 3 -1 -1 -1 -1
+// 1 2 3 4 5 6 7 -1 -1 -1 -1 8 9 -1 -1 -1 -1 -1 -1
+/*int main()
+{
+    /*BTNode<int> *root=new BTNode<int>(1);
+    BTNode<int> *n1=new BTNode<int>(2);
+    BTNode<int> *n2=new BTNode<int>(3);
+    root->left=n1;
+    root->right=n2;*/
+    //BTNode<int> *root=input();
+    /*int key;
+    int count=0;
+    int ans=INT_MAX;
+    int m=INT_MIN;
+    BTNode<int> *root=inputlevelwise();
+    print(root);
+    cout<<"Nodes:"<<Count(root)<<endl;
+    cout<<"Enter Key to find in BT:"<<endl;
+    cin>>key;
+    if(findnode(root,key))
+    {
+        cout<<"Found "<<key<<endl;
+    }
+    else
+    {
+        cout<<key<<" Not Found"<<endl;
+    }
+    cout<<"Minimum value in BT:"<<Minimum(root)<<endl;
+    cout<<"Minimum value in BT using ref variable:"<<endl;
+    Minimum2(root,ans);
+    cout<<ans<<endl;
+    cout<<"Maximum value in BT using ref variable:"<<endl;
+    Maximun(root,m);
+    cout<<m<<endl;
+    cout<<"Maximum value in BT:"<<Maximum2(root)<<endl;
+    cout<<"Number of leaf Nodes:"<<countleafnode(root)<<endl;
+    cout<<"Number of leaf Nodes by ref variable:"<<endl;
+    countleafnodes2(root,count);
+    cout<<count<<endl;
+    vector<int> v;
+    if(getpath(root,55,v))
+    {
+        cout<<"Path:"<<endl;
+        for(int i=0;i<v.size();i++)
+        {
+            cout<<v[i]<<" ";
+        }
+        v.clear();
+    }
+    else
+    {
+        cout<<"Value Not Found No Path!"<<endl;
+    }
+    delete root;
+}*/
