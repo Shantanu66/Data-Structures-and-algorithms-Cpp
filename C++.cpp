@@ -3490,3 +3490,23 @@ bool getpath(BTNode<int> *root,int key,vector<int> &v)
     }
     delete root;
 }*/
+///BINARY SEARCH TREE
+/*template<typename T>
+class BTNode
+{
+public:
+    T data;
+    BTNode *left;
+    BTNode *right;
+    BTNode(T data)
+    {
+        this->data=data;
+        left=NULL;
+        right=NULL;
+    }
+    ~BTNode()
+    {
+        delete left;
+        delete right;
+    }
+};
