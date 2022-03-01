@@ -3510,3 +3510,40 @@ public:
         delete right;
     }
 };
+class Pair
+{
+public:
+    BTNode<int> *head;
+    BTNode<int> *tail;
+};
+class BST
+{
+
+    BTNode<int> *root;
+    void print(BTNode<int> *root)
+    {
+        if(root==NULL)
+        {
+            return;
+        }
+        cout<<root->data<<":";
+        if(root->left==NULL && root->right==NULL)
+        {
+            cout<<"Leaf Node"<<endl;
+            return;
+        }
+        if(root->right==NULL)
+        {
+            cout<<"L"<<root->left->data<<endl;
+        }
+        else if(root->left==NULL)
+        {
+            cout<<"R"<<root->right->data<<endl;
+        }
+        else
+        {
+            cout<<"L"<<root->left->data<<","<<"R"<<root->right->data<<endl;
+        }
+        print(root->left);
+        print(root->right);
+    }
