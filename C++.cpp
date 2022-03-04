@@ -3547,3 +3547,19 @@ class BST
         print(root->left);
         print(root->right);
     }
+    bool hasData(BTNode<int> *node,int data)
+    {
+        if(!node)return false;
+        if(node->data==data)
+        {
+            return true;
+        }
+        if(node->data>data)
+        {
+            return hasData(node->left,data);
+        }
+        else
+        {
+            return hasData(node->right,data);
+        }
+    }
