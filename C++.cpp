@@ -3563,3 +3563,15 @@ class BST
             return hasData(node->right,data);
         }
     }
+     BTNode<int>* insert(BTNode<int>* node, int data){
+        if(node == NULL){
+            BTNode<int> *n = new BTNode<int>(data);
+            return n;
+        }
+        if(data < node->data){
+            node->left = insert(node->left , data);
+        }else{
+           node->right = insert(node->right, data);
+        }
+        return node;
+    }
