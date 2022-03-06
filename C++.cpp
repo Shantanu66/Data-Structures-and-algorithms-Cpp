@@ -3575,3 +3575,14 @@ class BST
         }
         return node;
     }
+    BTNode<int> *DeleteData(BTNode<int> *node,int data)
+    {
+        if(!node)return NULL;
+        if(data>node->data)
+        {
+            node->right=DeleteData(node->right,data);
+        }
+        else if(data<node->data)
+        {
+            node->left=DeleteData(node->left,data);
+        }
