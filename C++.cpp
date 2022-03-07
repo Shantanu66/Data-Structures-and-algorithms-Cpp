@@ -3586,3 +3586,17 @@ class BST
         {
             node->left=DeleteData(node->left,data);
         }
+    else
+        {
+            if(node->left==NULL && node->right==NULL)
+            {
+                delete node;
+                return NULL;
+            }
+            else if(node->right==NULL)
+            {
+                BTNode<int> *leftsubtree=node->left;
+                node->left=NULL;
+                delete node;
+                return leftsubtree;
+            }
