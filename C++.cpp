@@ -3600,3 +3600,10 @@ class BST
                 delete node;
                 return leftsubtree;
             }
+            else if(node->left==NULL)
+            {
+                BTNode<int> *rightsubtree=node->right;
+                node->right=NULL;
+                delete node;
+                return rightsubtree;
+            }
