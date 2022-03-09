@@ -3607,3 +3607,14 @@ class BST
                 delete node;
                 return rightsubtree;
             }
+            else
+            {
+                BTNode<int> *rightmin=node->right;
+                while(rightmin->left)
+                {
+                    rightmin=rightmin->left;
+                }
+                int Min=rightmin->data;
+                node->data=Min;
+                node->right=DeleteData(node->right,Min);
+            }
