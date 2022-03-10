@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-///Cpp Version check
+/// Cpp Version check
 /*int main()
 {
     if (__cplusplus == 201703L) cout << "C++17\n";
@@ -11,7 +11,7 @@ using namespace std;
     else cout << "pre-standard C++\n";
 }*/
 
-///Template
+/// Template
 /*template <typename T>
 T myMax(T x, T y)
 {
@@ -72,7 +72,7 @@ return 0;
 /*a=a^b;
    b=a^b;
    a=a^b;*/
-//swap(a,b);
+// swap(a,b);
 /*cout<<"After Swapping:"<<endl;
    cout<<"a:"<<a<<endl;
    cout<<"b:"<<b<<endl;
@@ -125,7 +125,7 @@ int main()
    cout << arrMin<char, 256>(arr2, n2);
    return 0;
 }*/
-///insert element at specific index
+/// insert element at specific index
 /*void insertarray(int a[],int i,int element,int s)
 {
     s+=1;
@@ -348,7 +348,7 @@ int main()
     suffixprint(str);
     return 0;
 }*/
-///2D Array
+/// 2D Array
 /*int main()
 {
     int a[100][100];
@@ -384,7 +384,7 @@ int main()
 
     return 0;
 }*/
-//String Class
+// String Class
 /*class DynamicArray
 {
     int *Data;
@@ -528,7 +528,7 @@ public:
     cout<<k<<endl;
     return 0;
 }*/
-///BUBBLE SORT AND SELECTION SORTING
+/// BUBBLE SORT AND SELECTION SORTING
 /*void selectionsort(int a[],int n)
 {
     for(int i=0;i<=n-2;i++)
@@ -599,7 +599,7 @@ int main()
     }
     return 0;
 }*/
-///LINEAR AND BINARY SEARCH
+/// LINEAR AND BINARY SEARCH
 /*int LinearSearch(int a[],int n,int key)
 {
     for(int i=0;i<n;i++)
@@ -664,8 +664,8 @@ int main()
 
     return 0;
 }*/
-///RECURSION BASIC
-///factorial
+/// RECURSION BASIC
+/// factorial
 /*int fact(int n)
 {
     if(n<0)return -1;
@@ -680,7 +680,7 @@ int main()
     int ans=fact(n);
     cout<<"Factorial:"<<ans<<endl;
 }*/
-///fibonacci number
+/// fibonacci number
 /*int Fibonacci(int n)
 {
     if(n==0)return 0;
@@ -694,7 +694,7 @@ int main()
     cout<<"Fibonnaci:"<<Fibonacci(3)<<endl;
     return 0;
 }*/
-///Power
+/// Power
 /*int power(int x,int n)
 {
     if(n==0)return 1;
@@ -706,7 +706,7 @@ int main()
     cout<<"Power:"<<power(2,3)<<endl;
     return 0;
 }*/
-///Print Numbers
+/// Print Numbers
 /*void print(int n)
 {
 
@@ -722,7 +722,7 @@ int main()
     print(10);
     return 0;
 }*/
-///Count Digits
+/// Count Digits
 /*int Count(int n)
 {
     if(n==0)return 0;
@@ -734,7 +734,7 @@ int main()
     cout<<"No.of digits:"<<Count(432)<<endl;
     return 0;
 }*/
-///Sum of Digits
+/// Sum of Digits
 /*int Sum(int n)
 {
 
@@ -749,7 +749,7 @@ int main()
     cout<<"Sum digits:"<<Sum(432)<<endl;
     return 0;
 }*/
-///Multiplication
+/// Multiplication
 /*int Multiplication(int m,int n)
 {
     if(n==0)return 0;
@@ -761,7 +761,7 @@ int main()
     cout<<"Multiplication:"<<Multiplication(5,3)<<endl;
     return 0;
 }*/
-///Count Zeroes
+/// Count Zeroes
 /*int Zeroes(int n)
 {
     if(n==0)return 0;
@@ -781,7 +781,7 @@ int main()
     cout<<"Zeroes:"<<Zeroes(2002)<<endl;
     return 0;
 }*/
-///Geometric Sum
+/// Geometric Sum
 /*double Geometric(int k)
 {
     if(k==0)return 1;
@@ -793,8 +793,8 @@ int main()
     cout<<"geometric Sum:"<<Geometric(4)<<endl;
     return 0;
 }*/
-///RECURSION INTERMEDIATE
-///array sorted or not
+/// RECURSION INTERMEDIATE
+/// array sorted or not
 /*bool Array(int a[],int n)
 {
     if(n==0||n==1)return true;
@@ -850,7 +850,7 @@ int main()
     }
     return 0;
 }*/
-///SUM OF ARRAY
+/// SUM OF ARRAY
 /*int Sum(int a[],int n)
 {
     if(n==0)return 0;
@@ -861,7 +861,7 @@ int main()
     if(n==0)return 0;
     return Sum2(a,n-1)+a[n-1];
 }*/
-///using index
+/// using index
 /*int Sum3(int a[],int n,int i)
 {
     if(i==n)
@@ -883,7 +883,7 @@ int main()
     cout<<"SUM:"<<Sum3(a,n,i)<<endl;
     return 0;
 }*/
-///Check if element is present
+/// Check if element is present
 /*bool CheckElement(int a[],int n,int key)
 {
     if(n==0)return 0;
@@ -942,14 +942,14 @@ int main()
 
     return 0;
 }*/
-///First index of an element
+/// First index of an element
 /*int index(int a[],int num,int i)
 {
     if(i==-1)return -1;
     if(a[i]==num)return i;
     return index(a,num,i+1);
 }*/
-///Last index of an element
+/// Last index of an element
 /*int index(int a[],int n,int num,int i)
 {
     if(i==n)return -1;
@@ -957,14 +957,14 @@ int main()
     return index(a,n,num,i-1);
 
 }*/
-///end to start
+/// end to start
 /*int index(int a[],int n,int num)
 {
     if(n==0)return -1;
     if(a[n-1]==num)return n-1;
     return index(a,n-1,num);
 }*/
-///start to end
+/// start to end
 /*int index(int a[],int n,int num,int i)
 {
     if(i==n)return -1;
@@ -1002,7 +1002,7 @@ int main()
     cout<<"Index of number is at:"<<index(a,n,num,i)<<endl;
     return 0;
 }*/
-///Print all position
+/// Print all position
 /*void AllIndex(int a[],int n,int num,int i)
 {
     if(i==n)return;
@@ -1030,8 +1030,8 @@ int main()
     AllIndex(a,n,num,i);
     return 0;
 }*/
-///Occurence of number
-///using int
+/// Occurence of number
+/// using int
 /*int Frequency(int a[],int n,int num,int i,int Count)
 {
     if(i==n)return Count;
@@ -1042,7 +1042,7 @@ int main()
     }
     return Frequency(a,n,num,i+1,Count);
 }*/
-///using void and reference
+/// using void and reference
 /*void Frequency(int a[],int n,int num,int i,int &Count)
 {
     if(i==n)return;
@@ -1071,8 +1071,8 @@ int main()
     cout<<"Frequency of number is:"<<Frequency(a,n,num,i,Count)<<endl;
     return 0;
 }*/
-///Store all position of an element
-///using vector
+/// Store all position of an element
+/// using vector
 /*void StoreAllIndex(int a[],int n,int num,int i,vector<int> &result)
 {
     if(i==n)return;
@@ -1082,7 +1082,7 @@ int main()
     }
     return StoreAllIndex(a,n,num,i+1,result);
 }*/
-///using array
+/// using array
 /*int StoreAllIndex(int a[],int n,int num,int i,int result[],int j)
 {
     if(i==n)return 0;
@@ -1148,7 +1148,7 @@ int main()
         cout<<"Not Palindrome"<<endl;
     }
 }*/
-///Palindrome of number
+/// Palindrome of number
 /*int Reverse(int num,int rev_num)
 {
     if(num<=0)return rev_num;
@@ -1171,8 +1171,8 @@ int main()
     }
 
 }*/
-///RECURSION ADVANCED
-///print and reverse character array
+/// RECURSION ADVANCED
+/// print and reverse character array
 /*void print(char a[])
 {
     if(a[0]=='\0')return;
@@ -1185,7 +1185,7 @@ int main()
     cin.getline(input,100);
     print(input);
 }*/
-///print length of char array
+/// print length of char array
 /*int length(char input[])
 {
     if(input[0]=='\0')return 0;
@@ -1198,7 +1198,7 @@ int main()
     cout<<"Length is:"<<length(input);
     return 0;
 }*/
-///replace character
+/// replace character
 /*void Replace(char input[],char a,char x)
 {
     if(input[0]=='\0')return;
@@ -1223,7 +1223,7 @@ int main()
     cout<<"Replaced String:"<<endl;
     Replace(input,a,x);
 }*/
-///remove character
+/// remove character
 /*void Remove(char a[],char s)
 {
     if(a[0]=='\0')return;
@@ -1254,7 +1254,7 @@ int main()
     cout<<input<<endl;
     return 0;
 }*/
-///Remove Duplicates
+/// Remove Duplicates
 /*void RemoveDuplicates(char a[])
 {
     if(a[0]=='\0')return;
@@ -1283,9 +1283,9 @@ int main()
     cout<<input<<endl;
     return 0;
 }*/
-///Print all subsequences
-///using String
-///Store using vector
+/// Print all subsequences
+/// using String
+/// Store using vector
 /*void PrintSubsequences(string input,string output,vector<string> &store)
 {
     if(input.length()==0)
@@ -1309,7 +1309,7 @@ int main()
         cout<<store[i]<<endl;
     }
 }*/
-///using array
+/// using array
 /*void PrintSubsequences(char input[],char output[],int i)
 {
     if(input[0]=='\0')
@@ -1331,7 +1331,7 @@ int main()
     int i=0;
     PrintSubsequences(input,output,i);
 }*/
-///Convert String to int
+/// Convert String to int
 /*int Convert(char input[],int n)
 {
     if(n==0)
@@ -1367,7 +1367,7 @@ int main()
     int n=strlen(input);
     Convert(input,n);
 }*/
-///Print all permutation of string
+/// Print all permutation of string
 /*void permutation(char str[],int i)
 {
     if(str[i]=='\0')
@@ -1389,7 +1389,7 @@ int main()
     int i=0;
     permutation(str,i);
 }*/
-///Staircase problem
+/// Staircase problem
 /*int countways(int N)
 {
     if(N==0||N==1)return 1;
@@ -1404,7 +1404,7 @@ int main()
     cout<<"No of possible ways:"<<countways(n)<<endl;
     return 0;
 }*/
-///Tower of Hanoi
+/// Tower of Hanoi
 /*int HanoiSteps(int N)
 {
     if(N==0)return 0;
@@ -1426,7 +1426,7 @@ int main()
     cout<<"No of steps:"<<HanoiSteps(n)<<endl;
     PrintSteps(n,'S','H','D');
 }*/
-///MERGE SORT
+/// MERGE SORT
 /*void MergeArray(int x[],int y[],int a[],int s,int e)
 {
     int mid=(s+e)/2;
@@ -1501,7 +1501,7 @@ int main()
     }
     return 0;
 }*/
-///QUICK SORT
+/// QUICK SORT
 /*int Partition(int a[],int s,int e)
 {
     int count=0;
@@ -1566,7 +1566,7 @@ int main()
     }
     return 0;
 }*/
-///QUICK SORT METHOD 2
+/// QUICK SORT METHOD 2
 /*int Partition(int a[],int s,int e)
 {
     int i=s;
@@ -1608,7 +1608,7 @@ int main()
     }
     return 0;
 }*/
-///subarray to find Sum(LeetCode)
+/// subarray to find Sum(LeetCode)
 /*void subarray(int a[],int n,int sum)
 {
     int s=0;
@@ -1659,7 +1659,7 @@ int main()
     subarray(a, n, sum);
     return 0;
 }*/
-///Remove adjacent duplicates from a string(using char)
+/// Remove adjacent duplicates from a string(using char)
 /*void Remove(char a[])
 {
     if(a[0]=='\0')return;
@@ -1718,9 +1718,9 @@ int main()
     }
     delete []name;
 }*/
-///DATA STRUCTURES
-///LINKED LIST
-///Basic creation
+/// DATA STRUCTURES
+/// LINKED LIST
+/// Basic creation
 /*class Node
 {
 public:
@@ -1747,7 +1747,7 @@ int main()
     n3->next=n4;
     return 0;
 }*/
-///printing a linked list
+/// printing a linked list
 /*class Node
 {
 public:
@@ -1775,7 +1775,7 @@ void print(Node *head)
         head=head->next;
     }*/
 //}
-///length(iterative)
+/// length(iterative)
 /*int length(Node *head)
 {
     int length=0;
@@ -1788,7 +1788,7 @@ void print(Node *head)
     delete temp;
     return length;
 }*/
-///length(recursive)
+/// length(recursive)
 /*int length(Node *head)
 {
     if(head==NULL)return 0;
@@ -1883,7 +1883,7 @@ Node* Input()
     return head;
 
 }*/
-///Insert at ith position
+/// Insert at ith position
 /*Node* insertatithposition(Node *head,int i,int data)
 {
     if(i<0)
@@ -1995,7 +1995,7 @@ bool checkelement(Node *head,int data)
     a2->next=a3;
     a3->next=a4;
     print(a1);*/
-//print(Input());
+// print(Input());
 /*int i;
     Node *head=Input();
     cout<<"Linked List:"<<endl;
@@ -2006,7 +2006,7 @@ bool checkelement(Node *head,int data)
     cout<<"Enter index:"<<endl;
     cin>>i;
     printithnode(head,i);*/
-//int data;
+// int data;
 /*cout<<"Enter Data:"<<endl;
     cin>>data;
     cout<<"Enter index:"<<endl;
@@ -2029,7 +2029,7 @@ bool checkelement(Node *head,int data)
     }
     return 0;
 }*/
-///Circular Singly Linked List
+/// Circular Singly Linked List
 /*class Node
 {
 public:
@@ -2129,7 +2129,7 @@ int main()
     print(head2);
 
 }*/
-///Josephus Circle(Interview Question using Circular Singly Linked List)
+/// Josephus Circle(Interview Question using Circular Singly Linked List)
 /*class Node
 {
 public:
@@ -2201,7 +2201,7 @@ int main()
     cout<<"Last Element standing:"<<endl;
     cout<<Josephus(head,m)->data<<endl;
 }*/
-///Reverse a linked list(Recursively)
+/// Reverse a linked list(Recursively)
 /*class Node
 {
 public:
@@ -2281,8 +2281,8 @@ int main()
     cout<<"Alternate Nodes:"<<endl;
     printalternatenodes(head);
 }*/
-///STACK
-///stack implementation using array
+/// STACK
+/// stack implementation using array
 /*class Stack
 {
     int NextIndex;
@@ -2368,7 +2368,7 @@ int main()
     cout<<"Size of Stack:"<<" "<<s2.Size()<<endl;
     return 0;
 }*/
-///stack implementation using Template(array)
+/// stack implementation using Template(array)
 /*template<typename T>
 class Stack
 {
@@ -2480,7 +2480,7 @@ int main()
     cout<<endl;
     return 0;
 }*/
-///Stack implementation using Linked List
+/// Stack implementation using Linked List
 /*template<typename T>
 class Node
 {
@@ -2560,7 +2560,7 @@ int main()
     cout<<s1.IsEmpty()<<endl;
     return 0;
 }*/
-///Inbuilt Stack
+/// Inbuilt Stack
 /*int main(){
    stack<int> s;
    s.push(1);
@@ -2587,7 +2587,7 @@ int main()
 
    return 0;
 }*/
-///Remove adjacent duplicates(recursively)
+/// Remove adjacent duplicates(recursively)
 /*void RemoveDuplicates(char a[])
 {
     if(a[0]=='\0' || a[1]=='\0')return;
@@ -2649,8 +2649,8 @@ int main()
     }
     delete []a;
 }*/
-///QUEUE
-///Queue implementation using array
+/// QUEUE
+/// Queue implementation using array
 /*template<typename T>
 class Queue
 {
@@ -2773,7 +2773,7 @@ int main()
  return 0;
 }*/
 
-///queue implementation using Linked List
+/// queue implementation using Linked List
 /*template<typename T>
 class Node
 {
@@ -2880,7 +2880,7 @@ int main()
  cout<<q.IsEmpty()<<endl;
  return 0;
 }*/
-///Reverse a Queue
+/// Reverse a Queue
 /*void Reverse(queue<int> &q)
 {
     stack<int> s;
@@ -2911,7 +2911,7 @@ int main()
     return 0;
 
 }*/
-///Reverse a Queue Recursively
+/// Reverse a Queue Recursively
 /*void Reverse(queue<int> &q)
 {
     if(q.empty())return;
@@ -2936,8 +2936,8 @@ int main()
     return 0;
 }*/
 
-///TREES
-///GENERIC TREES
+/// TREES
+/// GENERIC TREES
 /*template<typename T>
 class TreeNode
 {
@@ -3206,35 +3206,35 @@ int main()
     TreeNode<int> *n2=new TreeNode<int>(3);
     root->children.push_back(n1);
     root->children.push_back(n2);*/
-    //TreeNode<int> *root=takeinput();
-    /*int k=1;
-    int ans=0;
-    TreeNode<int> *root=takeinputLevelWise();
-    cout<<"Tree:"<<endl;
-    //print(root);
-    PrintLevelWise(root);
-    cout<<"Number of Nodes:"<<Size(root)<<endl;
-    cout<<"Height:"<<height(root)<<endl;
-    cout<<"Nodes at level "<<k<<":"<<endl;
-    Nodeatlevelk(root,k);
-    cout<<endl;
-    cout<<"Nodes at level "<<k<<" using 2nd method"<<":"<<endl;
-    Nodeatlevelk2(root,k,0);
-    cout<<endl;
-    cout<<"Number of Leaf Nodes:"<<countleafnodes(root)<<endl;
-    countleafnodes2(root,ans);
-    cout<<"Number of Leaf Nodes using reference variable:"<<ans<<endl;
-    cout<<"PreOrder Traversal:"<<endl;
-    PreOrder(root);
-    cout<<endl;
-    cout<<"PostOrder Traversal:"<<endl;
-    PostOrder(root);
-    cout<<endl;
-    //DeleteTree(root);
-    delete root;
-    return 0;
+// TreeNode<int> *root=takeinput();
+/*int k=1;
+int ans=0;
+TreeNode<int> *root=takeinputLevelWise();
+cout<<"Tree:"<<endl;
+//print(root);
+PrintLevelWise(root);
+cout<<"Number of Nodes:"<<Size(root)<<endl;
+cout<<"Height:"<<height(root)<<endl;
+cout<<"Nodes at level "<<k<<":"<<endl;
+Nodeatlevelk(root,k);
+cout<<endl;
+cout<<"Nodes at level "<<k<<" using 2nd method"<<":"<<endl;
+Nodeatlevelk2(root,k,0);
+cout<<endl;
+cout<<"Number of Leaf Nodes:"<<countleafnodes(root)<<endl;
+countleafnodes2(root,ans);
+cout<<"Number of Leaf Nodes using reference variable:"<<ans<<endl;
+cout<<"PreOrder Traversal:"<<endl;
+PreOrder(root);
+cout<<endl;
+cout<<"PostOrder Traversal:"<<endl;
+PostOrder(root);
+cout<<endl;
+//DeleteTree(root);
+delete root;
+return 0;
 }*/
-///BINARY TREE
+/// BINARY TREE
 /*template<typename T>
 class BTNode
 {
@@ -3254,7 +3254,7 @@ public:
         delete right;
     }
 };*/
-///print using Recursion
+/// print using Recursion
 /*void print(BTNode<int> *root)
 {
         if(root==NULL)
@@ -3357,86 +3357,86 @@ int Count(BTNode<int> *root)
     }
     ans=Count(root->left)+Count(root->right);
     return 1+ans;*/
-    /*if(root==NULL)
-    {
-        return 0;
-    }
-    return Count(root->left)+Count(root->right)+1;
+/*if(root==NULL)
+{
+    return 0;
+}
+return Count(root->left)+Count(root->right)+1;
 }
 ///find Node
 bool findnode(BTNode<int> *root,int key)
 {
-    if(!root)return false;
-    if(root->data==key)return true;
-    return findnode(root->left,key) || findnode(root->right,key);
+if(!root)return false;
+if(root->data==key)return true;
+return findnode(root->left,key) || findnode(root->right,key);
 
 }
 ///find minimum in a BT
 int Minimum(BTNode<int> *root)
 {
-    if(!root)return INT_MAX;
-    int Min=root->data;
-    return min(Minimum(root->left),min(Min,Minimum(root->right)));
+if(!root)return INT_MAX;
+int Min=root->data;
+return min(Minimum(root->left),min(Min,Minimum(root->right)));
 }
 void Minimum2(BTNode<int> *root,int &ans)
 {
-    if(!root)return;
-    ans=min(ans,root->data);
-    Minimum2(root->left,ans);
-    Minimum2(root->right,ans);
+if(!root)return;
+ans=min(ans,root->data);
+Minimum2(root->left,ans);
+Minimum2(root->right,ans);
 }
 ///Find Maximum in BT
 void Maximun(BTNode<int> *root,int &m)
 {
-    if(!root)return;
-    m=max(m,root->data);
-    Maximun(root->left,m);
-    Maximun(root->right,m);
+if(!root)return;
+m=max(m,root->data);
+Maximun(root->left,m);
+Maximun(root->right,m);
 }
 int Maximum2(BTNode<int> *root)
 {
-    if(!root)return INT_MIN;
-    int Max=root->data;
-    return max(Maximum2(root->left),max(Max,Maximum2(root->right)));
+if(!root)return INT_MIN;
+int Max=root->data;
+return max(Maximum2(root->left),max(Max,Maximum2(root->right)));
 }
 ///count leaf nodes
 int countleafnode(BTNode<int> *root)
 {
-    if(!root)return 0;
-    if(!root->left && !root->right)
-    {
-        return 1;
-    }
-    return countleafnode(root->left)+countleafnode(root->right);
+if(!root)return 0;
+if(!root->left && !root->right)
+{
+    return 1;
+}
+return countleafnode(root->left)+countleafnode(root->right);
 }
 void countleafnodes2(BTNode<int> *root,int &count)
 {
-    if(!root)return;
-    if(!root->left && !root->right)
-    {
-        count++;
-        return;  //optional
-    }
-    countleafnodes2(root->left,count);
-    countleafnodes2(root->left,count);
+if(!root)return;
+if(!root->left && !root->right)
+{
+    count++;
+    return;  //optional
+}
+countleafnodes2(root->left,count);
+countleafnodes2(root->left,count);
 }
 bool getpath(BTNode<int> *root,int key,vector<int> &v)
 {
-    if(!root)return false;
-    v.push_back(root->data);
-    if(root->data==key)return true;
-    if(getpath(root->left,key,v) || getpath(root->right,key,v))
-    {
-        return true;
-    }
-    else
-    {
-        v.pop_back();
-        return false;
-    }
+if(!root)return false;
+v.push_back(root->data);
+if(root->data==key)return true;
+if(getpath(root->left,key,v) || getpath(root->right,key,v))
+{
+    return true;
+}
+else
+{
+    v.pop_back();
+    return false;
+}
 }*/
-//1 2 3 -1 -1 -1 -1
-// 1 2 3 4 5 6 7 -1 -1 -1 -1 8 9 -1 -1 -1 -1 -1 -1
+// 1 2 3 -1 -1 -1 -1
+//  1 2 3 4 5 6 7 -1 -1 -1 -1 8 9 -1 -1 -1 -1 -1 -1
 /*int main()
 {
     /*BTNode<int> *root=new BTNode<int>(1);
@@ -3444,53 +3444,53 @@ bool getpath(BTNode<int> *root,int key,vector<int> &v)
     BTNode<int> *n2=new BTNode<int>(3);
     root->left=n1;
     root->right=n2;*/
-    //BTNode<int> *root=input();
-    /*int key;
-    int count=0;
-    int ans=INT_MAX;
-    int m=INT_MIN;
-    BTNode<int> *root=inputlevelwise();
-    print(root);
-    cout<<"Nodes:"<<Count(root)<<endl;
-    cout<<"Enter Key to find in BT:"<<endl;
-    cin>>key;
-    if(findnode(root,key))
+// BTNode<int> *root=input();
+/*int key;
+int count=0;
+int ans=INT_MAX;
+int m=INT_MIN;
+BTNode<int> *root=inputlevelwise();
+print(root);
+cout<<"Nodes:"<<Count(root)<<endl;
+cout<<"Enter Key to find in BT:"<<endl;
+cin>>key;
+if(findnode(root,key))
+{
+    cout<<"Found "<<key<<endl;
+}
+else
+{
+    cout<<key<<" Not Found"<<endl;
+}
+cout<<"Minimum value in BT:"<<Minimum(root)<<endl;
+cout<<"Minimum value in BT using ref variable:"<<endl;
+Minimum2(root,ans);
+cout<<ans<<endl;
+cout<<"Maximum value in BT using ref variable:"<<endl;
+Maximun(root,m);
+cout<<m<<endl;
+cout<<"Maximum value in BT:"<<Maximum2(root)<<endl;
+cout<<"Number of leaf Nodes:"<<countleafnode(root)<<endl;
+cout<<"Number of leaf Nodes by ref variable:"<<endl;
+countleafnodes2(root,count);
+cout<<count<<endl;
+vector<int> v;
+if(getpath(root,55,v))
+{
+    cout<<"Path:"<<endl;
+    for(int i=0;i<v.size();i++)
     {
-        cout<<"Found "<<key<<endl;
+        cout<<v[i]<<" ";
     }
-    else
-    {
-        cout<<key<<" Not Found"<<endl;
-    }
-    cout<<"Minimum value in BT:"<<Minimum(root)<<endl;
-    cout<<"Minimum value in BT using ref variable:"<<endl;
-    Minimum2(root,ans);
-    cout<<ans<<endl;
-    cout<<"Maximum value in BT using ref variable:"<<endl;
-    Maximun(root,m);
-    cout<<m<<endl;
-    cout<<"Maximum value in BT:"<<Maximum2(root)<<endl;
-    cout<<"Number of leaf Nodes:"<<countleafnode(root)<<endl;
-    cout<<"Number of leaf Nodes by ref variable:"<<endl;
-    countleafnodes2(root,count);
-    cout<<count<<endl;
-    vector<int> v;
-    if(getpath(root,55,v))
-    {
-        cout<<"Path:"<<endl;
-        for(int i=0;i<v.size();i++)
-        {
-            cout<<v[i]<<" ";
-        }
-        v.clear();
-    }
-    else
-    {
-        cout<<"Value Not Found No Path!"<<endl;
-    }
-    delete root;
+    v.clear();
+}
+else
+{
+    cout<<"Value Not Found No Path!"<<endl;
+}
+delete root;
 }*/
-///BINARY SEARCH TREE
+/// BINARY SEARCH TREE
 /*template<typename T>
 class BTNode
 {
@@ -3618,3 +3618,14 @@ class BST
                 node->data=Min;
                 node->right=DeleteData(node->right,Min);
             }
+            return node;
+            }
+            Pair converttoLL(BTNode<int> *root)
+            {
+                if(!root)
+                {
+                    Pair p;
+                    p.head=NULL;
+                    p.tail=NULL;
+                    return p;
+                }
