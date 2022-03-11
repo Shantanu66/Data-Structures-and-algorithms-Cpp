@@ -3629,3 +3629,11 @@ class BST
                     p.tail=NULL;
                     return p;
                 }
+                }
+            if(!root->left && !root->right)
+        {
+            Pair p;
+            p.head=root;
+            p.tail=root;
+            return p;
+        }
