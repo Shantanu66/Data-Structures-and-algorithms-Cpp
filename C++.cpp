@@ -3637,3 +3637,14 @@ class BST
             p.tail=root;
             return p;
         }
+        else if
+        {
+            cout<<"R"<<root->right->data<<endl;
+        }
+        else
+        {
+            cout<<"L"<<root->left->data<<","<<"R"<<root->right->data<<endl;
+        }
+        print(root->left);
+        print(root->right);
+    }
