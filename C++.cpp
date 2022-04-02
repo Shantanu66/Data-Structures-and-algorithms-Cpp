@@ -3645,6 +3645,14 @@ class BST
         {
             cout<<"L"<<root->left->data<<","<<"R"<<root->right->data<<endl;
         }
-        print(root->left);
-        print(root->right);
-    }
+            print(root->left);
+            print(root->right);
+        }
+        {
+            Pair rightsubtree=converttoLL(root->right);
+            root->right=rightsubtree.head;
+            Pair p;
+            p.head=root;
+            p.tail=rightsubtree.tail;
+            return p;
+        }
