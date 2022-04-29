@@ -3656,7 +3656,7 @@ class BST
             p.tail=rightsubtree.tail;
             return p;
         }
-        {
+        
             
 
             
