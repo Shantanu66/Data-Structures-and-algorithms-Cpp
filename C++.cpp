@@ -3656,7 +3656,12 @@ class BST
             p.tail=rightsubtree.tail;
             return p;
         }
-        
+        Pair rightsubtree=converttoLL(root->right);
+            root->right=rightsubtree.head;
+            Pair p;
+            p.head=root;
+            p.tail=rightsubtree.tail;
+            return p;
             
 
             
