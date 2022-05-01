@@ -3663,7 +3663,9 @@ class BST
             leftsubtree.tail->right=root;
             root->right=rightsubtree.head;
             Pair p;
-            
+            p.head=leftsubtree.head;
+            p.tail=rightsubtree.tail;
+            return p;
         }
 
             
