@@ -3662,6 +3662,7 @@ class BST
             Pair rightsubtree=converttoLL(root->right);
             leftsubtree.tail->right=root;
             root->right=rightsubtree.head;
+            root->left=leftsubtree.head;
             
         }
 
