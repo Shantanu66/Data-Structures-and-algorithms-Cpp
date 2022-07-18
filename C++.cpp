@@ -3665,6 +3665,22 @@ class BST
             root->left=leftsubtree.head;
             
         }
+        int main()
+{
+    /*enum
+    {
+        A,B,C
+    };
+    //Example a;
+    cout<<C<<endl;*/
+    enum Example
+    {
+        A,B,C
+    };
+    Example a=Example
+    cout<<a<<endl;
+
+}
 
             
 
