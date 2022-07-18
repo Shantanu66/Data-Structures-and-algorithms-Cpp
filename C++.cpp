@@ -3673,14 +3673,39 @@ class BST
     };
     //Example a;
     cout<<C<<endl;*/
-    enum Example
-    {
-        A,B,C
-    };
-    Example a=Example
-    cout<<a<<endl;
+//     enum Example
+//     {
+//         A,B,C
+//     };
+//     Example a=Example
+//     cout<<a<<endl;
 
-}
+// }
+// enum month
+//     {
+//         Jan,
+//         Feb,
+//         Mar,
+//         Apr,
+//         May,
+//         Jun,
+//         Jul,
+//         Aug,
+//         Sep,
+//         Oct,
+//         Nov,
+//         Dec
+//     };
+// int main()
+// {
+//     month sel;
+//     sel=Jan;
+//     if(sel==Jan)
+//     {
+//         cout<<"January was chosen"<<endl;
+//     }
+
+// }
 
             
 
