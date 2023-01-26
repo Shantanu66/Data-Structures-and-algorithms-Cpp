@@ -3700,9 +3700,14 @@ class BST
 // {
 //     month sel;
 //     sel=Jan;
+       sel1=feb;
 //     if(sel==Jan)
 //     {
 //         cout<<"January was chosen"<<endl;
+//     }
+       if(sel1==feb)
+//     {
+//         cout<<"february was chosen"<<endl;
 //     }
 
 // }
